@@ -1,0 +1,15 @@
+04_workaround_as_needed_bug.patch
+06_always-disable-valgrind.patch
+07_do-not-disable-debug-symbols.patch
+08_enable-zsh.patch
+11_omit-directories-from-config.patch
+12_zsh.patch
+13_singlesocket-fix-the-sincebefore-placement.patch
+14_connection_check-set-data-to-the-transfer-doing-the-.patch
+15_connection_check-restore-original-conn-data-after-th.patch
+16_tftp-use-the-current-blksize-for-recvfrom.patch
+17_CURL_MAX_INPUT_LENGTH-largest-acceptable-string-inpu.patch
+
+# do not add patches below
+90_gnutls.patch
+99_nss.patch

@@ -1,0 +1,19 @@
+HIDDEN
+{
+  local:
+    __*;
+    _rest*;
+    _save*;
+};
+
+CURL_GNUTLS_3
+{
+  global: curl_*;
+  local: *;
+};
+
+CURL_GNUTLS_4
+{
+  global: curl_*;
+  local: *;
+} CURL_GNUTLS_3;

@@ -1,0 +1,33 @@
+* Expire in 0 ms for 6 (transfer 0x56043e31e9c0)
+* Expire in 13000 ms for 8 (transfer 0x56043e31e9c0)
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Expire in 200 ms for 4 (transfer 0x56043e31e9c0)
+* Connected to 127.0.0.1 (127.0.0.1) port 8991 (#0)
+* found 387 certificates in /etc/ssl/certs
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* SSL connection using TLS1.2 / ECDHE_RSA_AES_256_GCM_SHA384
+* 	 server certificate verification SKIPPED
+* 	 server certificate status verification SKIPPED
+* 	 common name: localhost.nn (does not match '127.0.0.1')
+* 	 server certificate expiration date OK
+* 	 server certificate activation date OK
+* 	 certificate public key: RSA
+* 	 certificate version: #3
+* 	 subject: C=NN,O=Edel Curl Arctic Illudium Research Cloud,CN=localhost.nn
+* 	 start date: Wed, 05 Sep 2018 23:29:01 GMT
+* 	 expire date: Sun, 22 Nov 2026 23:29:01 GMT
+* 	 issuer: C=NN,O=Edel Curl Arctic Illudium Research Cloud,CN=Northern Nowhere Trust Anchor
+* 	 compression: NULL
+* ALPN, server did not agree to a protocol
+> GET /verifiedserver HTTP/1.1
+> Host: 127.0.0.1:8991
+> User-Agent: curl/7.64.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Length: 16
+< 
+{ [16 bytes data]
+* Connection #0 to host 127.0.0.1 left intact

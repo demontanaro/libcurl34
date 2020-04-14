@@ -1,0 +1,1501 @@
+ dpkg-buildpackage -us -uc -ui -nc
+dpkg-buildpackage: info: source package curl
+dpkg-buildpackage: info: source version 7.64.0-4
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Alessandro Ghedini <ghedo@debian.org>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules build
+dh build
+   create-stamp debian/debhelper-build-stamp
+ debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   dh_auto_install
+   debian/rules override_dh_install
+make[1]: Entering directory '/root/instalables/libcurl34/curl-7.64.0'
+/usr/bin/make -C debian/build					\
+	DESTDIR=/root/instalables/libcurl34/curl-7.64.0/debian/tmp install
+make[2]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build'
+Making install in lib
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/lib'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/lib'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libcurl.la '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/libcurl.so.4.5.0 /root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0
+libtool: install: (cd /root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libcurl.so.4.5.0 libcurl.so.4 || { rm -f libcurl.so.4 && ln -s libcurl.so.4.5.0 libcurl.so.4; }; })
+libtool: install: (cd /root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu && { ln -s -f libcurl.so.4.5.0 libcurl.so || { rm -f libcurl.so && ln -s libcurl.so.4.5.0 libcurl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcurl.lai /root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu/libcurl.la
+libtool: install: /usr/bin/install -c .libs/libcurl.a /root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu/libcurl.a
+libtool: install: chmod 644 /root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu/libcurl.a
+libtool: install: ranlib /root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu/libcurl.a
+libtool: warning: remember to run 'libtool --finish /usr/lib/x86_64-linux-gnu'
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/lib'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/lib'
+Making install in src
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/src'
+Making install in ../docs
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+Making install in .
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+make[6]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl-config.1 /root/instalables/libcurl34/curl-7.64.0/debian/build/docs/curl.1 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man1'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+Making install in cmdline-opts
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/cmdline-opts'
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/cmdline-opts'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/cmdline-opts'
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/cmdline-opts'
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/src'
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/src'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c curl '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/bin'
+libtool: install: /usr/bin/install -c .libs/curl /root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/bin/curl
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/src'
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/src'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/src'
+Making install in scripts
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/scripts'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/scripts'
+make[4]: Nothing to be done for 'install-exec-am'.
+/bin/mkdir -p /root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/zsh/vendor-completions
+/usr/bin/install -c -m 644 _curl /root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/zsh/vendor-completions/_curl
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/scripts'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/scripts'
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/bin'
+ /usr/bin/install -c curl-config '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/bin'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+ /usr/bin/install -c -m 644 libcurl.pc '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/lib/x86_64-linux-gnu/pkgconfig'
+/usr/bin/make  install-data-hook
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build'
+cd include && /usr/bin/make install
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/include'
+Making install in curl
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/include/curl'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/include/curl'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/include/x86_64-linux-gnu/curl'
+ /usr/bin/install -c -m 644 curl.h curlver.h easy.h mprintf.h stdcheaders.h multi.h typecheck-gcc.h system.h urlapi.h '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/include/x86_64-linux-gnu/curl'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/include/curl'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/include/curl'
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/include'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/include'
+make[8]: Nothing to be done for 'install-exec-am'.
+make[8]: Nothing to be done for 'install-data-am'.
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/include'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/include'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/include'
+cd docs && /usr/bin/make install
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+Making install in .
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl-config.1 /root/instalables/libcurl34/curl-7.64.0/debian/build/docs/curl.1 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man1'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+Making install in cmdline-opts
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/cmdline-opts'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/cmdline-opts'
+make[8]: Nothing to be done for 'install-exec-am'.
+make[8]: Nothing to be done for 'install-data-am'.
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/cmdline-opts'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/cmdline-opts'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs'
+cd docs/libcurl && /usr/bin/make install
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/libcurl'
+Making install in opts
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/libcurl/opts'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/libcurl/opts'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_ACTIVESOCKET.3 CURLINFO_APPCONNECT_TIME.3 CURLINFO_APPCONNECT_TIME_T.3 CURLINFO_CERTINFO.3 CURLINFO_CONDITION_UNMET.3 CURLINFO_CONNECT_TIME.3 CURLINFO_CONNECT_TIME_T.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3 CURLINFO_CONTENT_LENGTH_UPLOAD.3 CURLINFO_CONTENT_LENGTH_UPLOAD_T.3 CURLINFO_CONTENT_TYPE.3 CURLINFO_COOKIELIST.3 CURLINFO_EFFECTIVE_URL.3 CURLINFO_FILETIME.3 CURLINFO_FILETIME_T.3 CURLINFO_FTP_ENTRY_PATH.3 CURLINFO_HEADER_SIZE.3 CURLINFO_HTTPAUTH_AVAIL.3 CURLINFO_HTTP_CONNECTCODE.3 CURLINFO_HTTP_VERSION.3 CURLINFO_LASTSOCKET.3 CURLINFO_LOCAL_IP.3 CURLINFO_LOCAL_PORT.3 CURLINFO_NAMELOOKUP_TIME.3 CURLINFO_NAMELOOKUP_TIME_T.3 CURLINFO_NUM_CONNECTS.3 CURLINFO_OS_ERRNO.3 CURLINFO_PRETRANSFER_TIME.3 CURLINFO_PRETRANSFER_TIME_T.3 CURLINFO_PRIMARY_IP.3 CURLINFO_PRIMARY_PORT.3 CURLINFO_PRIVATE.3 CURLINFO_PROTOCOL.3 CURLINFO_PROXYAUTH_AVAIL.3 CURLINFO_PROXY_SSL_VERIFYRESULT.3 CURLINFO_REDIRECT_COUNT.3 CURLINFO_REDIRECT_TIME.3 CURLINFO_REDIRECT_TIME_T.3 CURLINFO_REDIRECT_URL.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_REQUEST_SIZE.3 CURLINFO_RESPONSE_CODE.3 CURLINFO_RTSP_CLIENT_CSEQ.3 CURLINFO_RTSP_CSEQ_RECV.3 CURLINFO_RTSP_SERVER_CSEQ.3 CURLINFO_RTSP_SESSION_ID.3 CURLINFO_SCHEME.3 CURLINFO_SIZE_DOWNLOAD.3 CURLINFO_SIZE_DOWNLOAD_T.3 CURLINFO_SIZE_UPLOAD.3 CURLINFO_SIZE_UPLOAD_T.3 CURLINFO_SPEED_DOWNLOAD.3 CURLINFO_SPEED_DOWNLOAD_T.3 CURLINFO_SPEED_UPLOAD.3 CURLINFO_SPEED_UPLOAD_T.3 CURLINFO_SSL_ENGINES.3 CURLINFO_SSL_VERIFYRESULT.3 CURLINFO_STARTTRANSFER_TIME.3 CURLINFO_STARTTRANSFER_TIME_T.3 CURLINFO_TLS_SESSION.3 CURLINFO_TLS_SSL_PTR.3 CURLINFO_TOTAL_TIME.3 CURLINFO_TOTAL_TIME_T.3 CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3 CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3 CURLMOPT_MAXCONNECTS.3 CURLMOPT_MAX_HOST_CONNECTIONS.3 CURLMOPT_MAX_PIPELINE_LENGTH.3 CURLMOPT_MAX_TOTAL_CONNECTIONS.3 CURLMOPT_PIPELINING.3 CURLMOPT_PIPELINING_SERVER_BL.3 CURLMOPT_PIPELINING_SITE_BL.3 CURLMOPT_PUSHDATA.3 CURLMOPT_PUSHFUNCTION.3 CURLMOPT_SOCKETDATA.3 CURLMOPT_SOCKETFUNCTION.3 CURLMOPT_TIMERDATA.3 CURLMOPT_TIMERFUNCTION.3 CURLOPT_ABSTRACT_UNIX_SOCKET.3 CURLOPT_ACCEPTTIMEOUT_MS.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_ACCEPT_ENCODING.3 CURLOPT_ADDRESS_SCOPE.3 CURLOPT_APPEND.3 CURLOPT_AUTOREFERER.3 CURLOPT_BUFFERSIZE.3 CURLOPT_CAINFO.3 CURLOPT_CAPATH.3 CURLOPT_CERTINFO.3 CURLOPT_CHUNK_BGN_FUNCTION.3 CURLOPT_CHUNK_DATA.3 CURLOPT_CHUNK_END_FUNCTION.3 CURLOPT_CLOSESOCKETDATA.3 CURLOPT_CLOSESOCKETFUNCTION.3 CURLOPT_UPKEEP_INTERVAL_MS.3 CURLOPT_CONNECTTIMEOUT.3 CURLOPT_CONNECTTIMEOUT_MS.3 CURLOPT_CONNECT_ONLY.3 CURLOPT_CONNECT_TO.3 CURLOPT_CONV_FROM_NETWORK_FUNCTION.3 CURLOPT_CONV_FROM_UTF8_FUNCTION.3 CURLOPT_CONV_TO_NETWORK_FUNCTION.3 CURLOPT_COOKIE.3 CURLOPT_COOKIEFILE.3 CURLOPT_COOKIEJAR.3 CURLOPT_COOKIELIST.3 CURLOPT_COOKIESESSION.3 CURLOPT_COPYPOSTFIELDS.3 CURLOPT_CRLF.3 CURLOPT_CRLFILE.3 CURLOPT_CUSTOMREQUEST.3 CURLOPT_CURLU.3 CURLOPT_DEBUGDATA.3 CURLOPT_DEBUGFUNCTION.3 CURLOPT_DEFAULT_PROTOCOL.3 CURLOPT_DIRLISTONLY.3 CURLOPT_DISALLOW_USERNAME_IN_URL.3 CURLOPT_DNS_CACHE_TIMEOUT.3 CURLOPT_DNS_INTERFACE.3 CURLOPT_DNS_LOCAL_IP4.3 CURLOPT_DNS_LOCAL_IP6.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_DNS_SERVERS.3 CURLOPT_DNS_SHUFFLE_ADDRESSES.3 CURLOPT_DNS_USE_GLOBAL_CACHE.3 CURLOPT_DOH_URL.3 CURLOPT_EGDSOCKET.3 CURLOPT_ERRORBUFFER.3 CURLOPT_EXPECT_100_TIMEOUT_MS.3 CURLOPT_FAILONERROR.3 CURLOPT_FILETIME.3 CURLOPT_FNMATCH_DATA.3 CURLOPT_FNMATCH_FUNCTION.3 CURLOPT_FOLLOWLOCATION.3 CURLOPT_FORBID_REUSE.3 CURLOPT_FRESH_CONNECT.3 CURLOPT_FTPPORT.3 CURLOPT_FTPSSLAUTH.3 CURLOPT_FTP_ACCOUNT.3 CURLOPT_FTP_ALTERNATIVE_TO_USER.3 CURLOPT_FTP_CREATE_MISSING_DIRS.3 CURLOPT_FTP_FILEMETHOD.3 CURLOPT_FTP_RESPONSE_TIMEOUT.3 CURLOPT_FTP_SKIP_PASV_IP.3 CURLOPT_FTP_SSL_CCC.3 CURLOPT_FTP_USE_EPRT.3 CURLOPT_FTP_USE_EPSV.3 CURLOPT_FTP_USE_PRET.3 CURLOPT_GSSAPI_DELEGATION.3 CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3 CURLOPT_HAPROXYPROTOCOL.3 CURLOPT_HEADER.3 CURLOPT_HEADERDATA.3 CURLOPT_HEADERFUNCTION.3 CURLOPT_HEADEROPT.3 CURLOPT_HTTP09_ALLOWED.3 CURLOPT_HTTP200ALIASES.3 CURLOPT_HTTPAUTH.3 CURLOPT_HTTPGET.3 CURLOPT_HTTPHEADER.3 CURLOPT_HTTPPOST.3 CURLOPT_HTTPPROXYTUNNEL.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_HTTP_CONTENT_DECODING.3 CURLOPT_HTTP_TRANSFER_DECODING.3 CURLOPT_HTTP_VERSION.3 CURLOPT_IGNORE_CONTENT_LENGTH.3 CURLOPT_TRAILERDATA.3 CURLOPT_TRAILERFUNCTION.3 CURLOPT_INFILESIZE.3 CURLOPT_INFILESIZE_LARGE.3 CURLOPT_INTERFACE.3 CURLOPT_INTERLEAVEDATA.3 CURLOPT_INTERLEAVEFUNCTION.3 CURLOPT_IOCTLDATA.3 CURLOPT_IOCTLFUNCTION.3 CURLOPT_IPRESOLVE.3 CURLOPT_ISSUERCERT.3 CURLOPT_KEEP_SENDING_ON_ERROR.3 CURLOPT_KEYPASSWD.3 CURLOPT_KRBLEVEL.3 CURLOPT_LOCALPORT.3 CURLOPT_LOCALPORTRANGE.3 CURLOPT_LOGIN_OPTIONS.3 CURLOPT_LOW_SPEED_LIMIT.3 CURLOPT_LOW_SPEED_TIME.3 CURLOPT_MAIL_AUTH.3 CURLOPT_MAIL_FROM.3 CURLOPT_MAIL_RCPT.3 CURLOPT_MAXCONNECTS.3 CURLOPT_MAXFILESIZE.3 CURLOPT_MAXFILESIZE_LARGE.3 CURLOPT_MAXREDIRS.3 CURLOPT_MAX_RECV_SPEED_LARGE.3 CURLOPT_MAX_SEND_SPEED_LARGE.3 CURLOPT_MIMEPOST.3 CURLOPT_NETRC.3 CURLOPT_NETRC_FILE.3 CURLOPT_NEW_DIRECTORY_PERMS.3 CURLOPT_NEW_FILE_PERMS.3 CURLOPT_NOBODY.3 CURLOPT_NOPROGRESS.3 CURLOPT_NOPROXY.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_NOSIGNAL.3 CURLOPT_OPENSOCKETDATA.3 CURLOPT_OPENSOCKETFUNCTION.3 CURLOPT_PASSWORD.3 CURLOPT_PATH_AS_IS.3 CURLOPT_PINNEDPUBLICKEY.3 CURLOPT_PIPEWAIT.3 CURLOPT_PORT.3 CURLOPT_POST.3 CURLOPT_POSTFIELDS.3 CURLOPT_POSTFIELDSIZE.3 CURLOPT_POSTFIELDSIZE_LARGE.3 CURLOPT_POSTQUOTE.3 CURLOPT_POSTREDIR.3 CURLOPT_PREQUOTE.3 CURLOPT_PRE_PROXY.3 CURLOPT_PRIVATE.3 CURLOPT_PROGRESSDATA.3 CURLOPT_PROGRESSFUNCTION.3 CURLOPT_PROTOCOLS.3 CURLOPT_PROXY.3 CURLOPT_PROXYAUTH.3 CURLOPT_PROXYHEADER.3 CURLOPT_PROXYPASSWORD.3 CURLOPT_PROXYPORT.3 CURLOPT_PROXYTYPE.3 CURLOPT_PROXYUSERNAME.3 CURLOPT_PROXYUSERPWD.3 CURLOPT_PROXY_CAINFO.3 CURLOPT_PROXY_CAPATH.3 CURLOPT_PROXY_CRLFILE.3 CURLOPT_PROXY_KEYPASSWD.3 CURLOPT_PROXY_PINNEDPUBLICKEY.3 CURLOPT_PROXY_SERVICE_NAME.3 CURLOPT_PROXY_SSLCERT.3 CURLOPT_PROXY_SSLCERTTYPE.3 CURLOPT_PROXY_SSLKEY.3 CURLOPT_PROXY_SSLKEYTYPE.3 CURLOPT_PROXY_SSLVERSION.3 CURLOPT_PROXY_SSL_CIPHER_LIST.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_PROXY_SSL_OPTIONS.3 CURLOPT_PROXY_SSL_VERIFYHOST.3 CURLOPT_PROXY_SSL_VERIFYPEER.3 CURLOPT_PROXY_TLS13_CIPHERS.3 CURLOPT_PROXY_TLSAUTH_PASSWORD.3 CURLOPT_PROXY_TLSAUTH_TYPE.3 CURLOPT_PROXY_TLSAUTH_USERNAME.3 CURLOPT_PROXY_TRANSFER_MODE.3 CURLOPT_PUT.3 CURLOPT_QUOTE.3 CURLOPT_RANDOM_FILE.3 CURLOPT_RANGE.3 CURLOPT_READDATA.3 CURLOPT_READFUNCTION.3 CURLOPT_REDIR_PROTOCOLS.3 CURLOPT_REFERER.3 CURLOPT_REQUEST_TARGET.3 CURLOPT_RESOLVE.3 CURLOPT_RESOLVER_START_DATA.3 CURLOPT_RESOLVER_START_FUNCTION.3 CURLOPT_RESUME_FROM.3 CURLOPT_RESUME_FROM_LARGE.3 CURLOPT_RTSP_CLIENT_CSEQ.3 CURLOPT_RTSP_REQUEST.3 CURLOPT_RTSP_SERVER_CSEQ.3 CURLOPT_RTSP_SESSION_ID.3 CURLOPT_RTSP_STREAM_URI.3 CURLOPT_RTSP_TRANSPORT.3 CURLOPT_SASL_IR.3 CURLOPT_SEEKDATA.3 CURLOPT_SEEKFUNCTION.3 CURLOPT_SERVICE_NAME.3 CURLOPT_SHARE.3 CURLOPT_SOCKOPTDATA.3 CURLOPT_SOCKOPTFUNCTION.3 CURLOPT_SOCKS5_AUTH.3 CURLOPT_SOCKS5_GSSAPI_NEC.3 CURLOPT_SOCKS5_GSSAPI_SERVICE.3 CURLOPT_SSH_AUTH_TYPES.3 CURLOPT_SSH_COMPRESSION.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3 CURLOPT_SSH_KEYDATA.3 CURLOPT_SSH_KEYFUNCTION.3 CURLOPT_SSH_KNOWNHOSTS.3 CURLOPT_SSH_PRIVATE_KEYFILE.3 CURLOPT_SSH_PUBLIC_KEYFILE.3 CURLOPT_SSLCERT.3 CURLOPT_SSLCERTTYPE.3 CURLOPT_SSLENGINE.3 CURLOPT_SSLENGINE_DEFAULT.3 CURLOPT_SSLKEY.3 CURLOPT_SSLKEYTYPE.3 CURLOPT_SSLVERSION.3 CURLOPT_SSL_CIPHER_LIST.3 CURLOPT_SSL_CTX_DATA.3 CURLOPT_SSL_CTX_FUNCTION.3 CURLOPT_SSL_ENABLE_ALPN.3 CURLOPT_SSL_ENABLE_NPN.3 CURLOPT_SSL_FALSESTART.3 CURLOPT_SSL_OPTIONS.3 CURLOPT_SSL_SESSIONID_CACHE.3 CURLOPT_SSL_VERIFYHOST.3 CURLOPT_SSL_VERIFYPEER.3 CURLOPT_SSL_VERIFYSTATUS.3 CURLOPT_STDERR.3 CURLOPT_STREAM_DEPENDS.3 CURLOPT_STREAM_DEPENDS_E.3 CURLOPT_STREAM_WEIGHT.3 CURLOPT_SUPPRESS_CONNECT_HEADERS.3 CURLOPT_TCP_FASTOPEN.3 CURLOPT_TCP_KEEPALIVE.3 CURLOPT_TCP_KEEPIDLE.3 CURLOPT_TCP_KEEPINTVL.3 CURLOPT_TCP_NODELAY.3 CURLOPT_TELNETOPTIONS.3 CURLOPT_TFTP_BLKSIZE.3 CURLOPT_TFTP_NO_OPTIONS.3 CURLOPT_TIMECONDITION.3 CURLOPT_TIMEOUT.3 CURLOPT_TIMEOUT_MS.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_TIMEVALUE.3 CURLOPT_TIMEVALUE_LARGE.3 CURLOPT_TLS13_CIPHERS.3 CURLOPT_TLSAUTH_PASSWORD.3 CURLOPT_TLSAUTH_TYPE.3 CURLOPT_TLSAUTH_USERNAME.3 CURLOPT_TRANSFERTEXT.3 CURLOPT_TRANSFER_ENCODING.3 CURLOPT_UNIX_SOCKET_PATH.3 CURLOPT_UNRESTRICTED_AUTH.3 CURLOPT_UPLOAD.3 CURLOPT_UPLOAD_BUFFERSIZE.3 CURLOPT_URL.3 CURLOPT_USERAGENT.3 CURLOPT_USERNAME.3 CURLOPT_USERPWD.3 CURLOPT_USE_SSL.3 CURLOPT_VERBOSE.3 CURLOPT_WILDCARDMATCH.3 CURLOPT_WRITEDATA.3 CURLOPT_WRITEFUNCTION.3 CURLOPT_XFERINFODATA.3 CURLOPT_XFERINFOFUNCTION.3 CURLOPT_XOAUTH2_BEARER.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/libcurl/opts'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/libcurl/opts'
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/libcurl'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/libcurl'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/aclocal'
+ /usr/bin/install -c -m 644 libcurl.m4 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/aclocal'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_easy_cleanup.3 curl_easy_duphandle.3 curl_easy_escape.3 curl_easy_getinfo.3 curl_easy_init.3 curl_easy_pause.3 curl_easy_perform.3 curl_easy_recv.3 curl_easy_reset.3 curl_easy_send.3 curl_easy_setopt.3 curl_easy_strerror.3 curl_easy_unescape.3 curl_easy_upkeep.3 curl_escape.3 curl_formadd.3 curl_formfree.3 curl_formget.3 curl_free.3 curl_getdate.3 curl_getenv.3 curl_global_cleanup.3 curl_global_init.3 curl_global_init_mem.3 curl_global_sslset.3 curl_mime_addpart.3 curl_mime_data.3 curl_mime_data_cb.3 curl_mime_encoder.3 curl_mime_filedata.3 curl_mime_filename.3 curl_mime_free.3 curl_mime_headers.3 curl_mime_init.3 curl_mime_name.3 curl_mime_subparts.3 curl_mime_type.3 curl_mprintf.3 curl_multi_add_handle.3 curl_multi_assign.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_multi_cleanup.3 curl_multi_fdset.3 curl_multi_info_read.3 curl_multi_init.3 curl_multi_perform.3 curl_multi_remove_handle.3 curl_multi_setopt.3 curl_multi_socket.3 curl_multi_socket_action.3 curl_multi_socket_all.3 curl_multi_strerror.3 curl_multi_timeout.3 curl_multi_wait.3 curl_share_cleanup.3 curl_share_init.3 curl_share_setopt.3 curl_share_strerror.3 curl_slist_append.3 curl_slist_free_all.3 curl_strequal.3 curl_strnequal.3 curl_unescape.3 curl_url.3 curl_url_cleanup.3 curl_url_dup.3 curl_url_get.3 curl_url_set.3 curl_version.3 curl_version_info.3 libcurl-easy.3 libcurl-env.3 libcurl-errors.3 libcurl-multi.3 libcurl-security.3 libcurl-share.3 libcurl-symbols.3 libcurl-thread.3 libcurl-tutorial.3 libcurl-url.3 libcurl.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp/usr/share/man/man3'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/libcurl'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/libcurl'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build/docs/libcurl'
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build'
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build'
+make[2]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build'
+/usr/bin/make -C debian/build-gnutls				\
+	DESTDIR=/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls install
+make[2]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls'
+Making install in lib
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/lib'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/lib'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libcurl.la '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/libcurl.so.4.5.0 /root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0
+libtool: install: (cd /root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu && { ln -s -f libcurl.so.4.5.0 libcurl.so.4 || { rm -f libcurl.so.4 && ln -s libcurl.so.4.5.0 libcurl.so.4; }; })
+libtool: install: (cd /root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu && { ln -s -f libcurl.so.4.5.0 libcurl.so || { rm -f libcurl.so && ln -s libcurl.so.4.5.0 libcurl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcurl.lai /root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu/libcurl.la
+libtool: install: /usr/bin/install -c .libs/libcurl.a /root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu/libcurl.a
+libtool: install: chmod 644 /root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu/libcurl.a
+libtool: install: ranlib /root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu/libcurl.a
+libtool: warning: remember to run 'libtool --finish /usr/lib/x86_64-linux-gnu'
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/lib'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/lib'
+Making install in src
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/src'
+Making install in ../docs
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+Making install in .
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+make[6]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl-config.1 /root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/curl.1 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man1'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+Making install in cmdline-opts
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/cmdline-opts'
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/cmdline-opts'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/cmdline-opts'
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/cmdline-opts'
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/src'
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/src'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c curl '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/bin'
+libtool: install: /usr/bin/install -c .libs/curl /root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/bin/curl
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/src'
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/src'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/src'
+Making install in scripts
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/scripts'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/scripts'
+make[4]: Nothing to be done for 'install-exec-am'.
+/bin/mkdir -p /root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/zsh/vendor-completions
+/usr/bin/install -c -m 644 _curl /root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/zsh/vendor-completions/_curl
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/scripts'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/scripts'
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/bin'
+ /usr/bin/install -c curl-config '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/bin'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu/pkgconfig'
+ /usr/bin/install -c -m 644 libcurl.pc '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/lib/x86_64-linux-gnu/pkgconfig'
+/usr/bin/make  install-data-hook
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls'
+cd include && /usr/bin/make install
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/include'
+Making install in curl
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/include/curl'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/include/curl'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/include/x86_64-linux-gnu/curl'
+ /usr/bin/install -c -m 644 curl.h curlver.h easy.h mprintf.h stdcheaders.h multi.h typecheck-gcc.h system.h urlapi.h '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/include/x86_64-linux-gnu/curl'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/include/curl'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/include/curl'
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/include'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/include'
+make[8]: Nothing to be done for 'install-exec-am'.
+make[8]: Nothing to be done for 'install-data-am'.
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/include'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/include'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/include'
+cd docs && /usr/bin/make install
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+Making install in .
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl-config.1 /root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/curl.1 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man1'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+Making install in cmdline-opts
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/cmdline-opts'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/cmdline-opts'
+make[8]: Nothing to be done for 'install-exec-am'.
+make[8]: Nothing to be done for 'install-data-am'.
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/cmdline-opts'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/cmdline-opts'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs'
+cd docs/libcurl && /usr/bin/make install
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/libcurl'
+Making install in opts
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/libcurl/opts'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/libcurl/opts'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_ACTIVESOCKET.3 CURLINFO_APPCONNECT_TIME.3 CURLINFO_APPCONNECT_TIME_T.3 CURLINFO_CERTINFO.3 CURLINFO_CONDITION_UNMET.3 CURLINFO_CONNECT_TIME.3 CURLINFO_CONNECT_TIME_T.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3 CURLINFO_CONTENT_LENGTH_UPLOAD.3 CURLINFO_CONTENT_LENGTH_UPLOAD_T.3 CURLINFO_CONTENT_TYPE.3 CURLINFO_COOKIELIST.3 CURLINFO_EFFECTIVE_URL.3 CURLINFO_FILETIME.3 CURLINFO_FILETIME_T.3 CURLINFO_FTP_ENTRY_PATH.3 CURLINFO_HEADER_SIZE.3 CURLINFO_HTTPAUTH_AVAIL.3 CURLINFO_HTTP_CONNECTCODE.3 CURLINFO_HTTP_VERSION.3 CURLINFO_LASTSOCKET.3 CURLINFO_LOCAL_IP.3 CURLINFO_LOCAL_PORT.3 CURLINFO_NAMELOOKUP_TIME.3 CURLINFO_NAMELOOKUP_TIME_T.3 CURLINFO_NUM_CONNECTS.3 CURLINFO_OS_ERRNO.3 CURLINFO_PRETRANSFER_TIME.3 CURLINFO_PRETRANSFER_TIME_T.3 CURLINFO_PRIMARY_IP.3 CURLINFO_PRIMARY_PORT.3 CURLINFO_PRIVATE.3 CURLINFO_PROTOCOL.3 CURLINFO_PROXYAUTH_AVAIL.3 CURLINFO_PROXY_SSL_VERIFYRESULT.3 CURLINFO_REDIRECT_COUNT.3 CURLINFO_REDIRECT_TIME.3 CURLINFO_REDIRECT_TIME_T.3 CURLINFO_REDIRECT_URL.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_REQUEST_SIZE.3 CURLINFO_RESPONSE_CODE.3 CURLINFO_RTSP_CLIENT_CSEQ.3 CURLINFO_RTSP_CSEQ_RECV.3 CURLINFO_RTSP_SERVER_CSEQ.3 CURLINFO_RTSP_SESSION_ID.3 CURLINFO_SCHEME.3 CURLINFO_SIZE_DOWNLOAD.3 CURLINFO_SIZE_DOWNLOAD_T.3 CURLINFO_SIZE_UPLOAD.3 CURLINFO_SIZE_UPLOAD_T.3 CURLINFO_SPEED_DOWNLOAD.3 CURLINFO_SPEED_DOWNLOAD_T.3 CURLINFO_SPEED_UPLOAD.3 CURLINFO_SPEED_UPLOAD_T.3 CURLINFO_SSL_ENGINES.3 CURLINFO_SSL_VERIFYRESULT.3 CURLINFO_STARTTRANSFER_TIME.3 CURLINFO_STARTTRANSFER_TIME_T.3 CURLINFO_TLS_SESSION.3 CURLINFO_TLS_SSL_PTR.3 CURLINFO_TOTAL_TIME.3 CURLINFO_TOTAL_TIME_T.3 CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3 CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3 CURLMOPT_MAXCONNECTS.3 CURLMOPT_MAX_HOST_CONNECTIONS.3 CURLMOPT_MAX_PIPELINE_LENGTH.3 CURLMOPT_MAX_TOTAL_CONNECTIONS.3 CURLMOPT_PIPELINING.3 CURLMOPT_PIPELINING_SERVER_BL.3 CURLMOPT_PIPELINING_SITE_BL.3 CURLMOPT_PUSHDATA.3 CURLMOPT_PUSHFUNCTION.3 CURLMOPT_SOCKETDATA.3 CURLMOPT_SOCKETFUNCTION.3 CURLMOPT_TIMERDATA.3 CURLMOPT_TIMERFUNCTION.3 CURLOPT_ABSTRACT_UNIX_SOCKET.3 CURLOPT_ACCEPTTIMEOUT_MS.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_ACCEPT_ENCODING.3 CURLOPT_ADDRESS_SCOPE.3 CURLOPT_APPEND.3 CURLOPT_AUTOREFERER.3 CURLOPT_BUFFERSIZE.3 CURLOPT_CAINFO.3 CURLOPT_CAPATH.3 CURLOPT_CERTINFO.3 CURLOPT_CHUNK_BGN_FUNCTION.3 CURLOPT_CHUNK_DATA.3 CURLOPT_CHUNK_END_FUNCTION.3 CURLOPT_CLOSESOCKETDATA.3 CURLOPT_CLOSESOCKETFUNCTION.3 CURLOPT_UPKEEP_INTERVAL_MS.3 CURLOPT_CONNECTTIMEOUT.3 CURLOPT_CONNECTTIMEOUT_MS.3 CURLOPT_CONNECT_ONLY.3 CURLOPT_CONNECT_TO.3 CURLOPT_CONV_FROM_NETWORK_FUNCTION.3 CURLOPT_CONV_FROM_UTF8_FUNCTION.3 CURLOPT_CONV_TO_NETWORK_FUNCTION.3 CURLOPT_COOKIE.3 CURLOPT_COOKIEFILE.3 CURLOPT_COOKIEJAR.3 CURLOPT_COOKIELIST.3 CURLOPT_COOKIESESSION.3 CURLOPT_COPYPOSTFIELDS.3 CURLOPT_CRLF.3 CURLOPT_CRLFILE.3 CURLOPT_CUSTOMREQUEST.3 CURLOPT_CURLU.3 CURLOPT_DEBUGDATA.3 CURLOPT_DEBUGFUNCTION.3 CURLOPT_DEFAULT_PROTOCOL.3 CURLOPT_DIRLISTONLY.3 CURLOPT_DISALLOW_USERNAME_IN_URL.3 CURLOPT_DNS_CACHE_TIMEOUT.3 CURLOPT_DNS_INTERFACE.3 CURLOPT_DNS_LOCAL_IP4.3 CURLOPT_DNS_LOCAL_IP6.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_DNS_SERVERS.3 CURLOPT_DNS_SHUFFLE_ADDRESSES.3 CURLOPT_DNS_USE_GLOBAL_CACHE.3 CURLOPT_DOH_URL.3 CURLOPT_EGDSOCKET.3 CURLOPT_ERRORBUFFER.3 CURLOPT_EXPECT_100_TIMEOUT_MS.3 CURLOPT_FAILONERROR.3 CURLOPT_FILETIME.3 CURLOPT_FNMATCH_DATA.3 CURLOPT_FNMATCH_FUNCTION.3 CURLOPT_FOLLOWLOCATION.3 CURLOPT_FORBID_REUSE.3 CURLOPT_FRESH_CONNECT.3 CURLOPT_FTPPORT.3 CURLOPT_FTPSSLAUTH.3 CURLOPT_FTP_ACCOUNT.3 CURLOPT_FTP_ALTERNATIVE_TO_USER.3 CURLOPT_FTP_CREATE_MISSING_DIRS.3 CURLOPT_FTP_FILEMETHOD.3 CURLOPT_FTP_RESPONSE_TIMEOUT.3 CURLOPT_FTP_SKIP_PASV_IP.3 CURLOPT_FTP_SSL_CCC.3 CURLOPT_FTP_USE_EPRT.3 CURLOPT_FTP_USE_EPSV.3 CURLOPT_FTP_USE_PRET.3 CURLOPT_GSSAPI_DELEGATION.3 CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3 CURLOPT_HAPROXYPROTOCOL.3 CURLOPT_HEADER.3 CURLOPT_HEADERDATA.3 CURLOPT_HEADERFUNCTION.3 CURLOPT_HEADEROPT.3 CURLOPT_HTTP09_ALLOWED.3 CURLOPT_HTTP200ALIASES.3 CURLOPT_HTTPAUTH.3 CURLOPT_HTTPGET.3 CURLOPT_HTTPHEADER.3 CURLOPT_HTTPPOST.3 CURLOPT_HTTPPROXYTUNNEL.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_HTTP_CONTENT_DECODING.3 CURLOPT_HTTP_TRANSFER_DECODING.3 CURLOPT_HTTP_VERSION.3 CURLOPT_IGNORE_CONTENT_LENGTH.3 CURLOPT_TRAILERDATA.3 CURLOPT_TRAILERFUNCTION.3 CURLOPT_INFILESIZE.3 CURLOPT_INFILESIZE_LARGE.3 CURLOPT_INTERFACE.3 CURLOPT_INTERLEAVEDATA.3 CURLOPT_INTERLEAVEFUNCTION.3 CURLOPT_IOCTLDATA.3 CURLOPT_IOCTLFUNCTION.3 CURLOPT_IPRESOLVE.3 CURLOPT_ISSUERCERT.3 CURLOPT_KEEP_SENDING_ON_ERROR.3 CURLOPT_KEYPASSWD.3 CURLOPT_KRBLEVEL.3 CURLOPT_LOCALPORT.3 CURLOPT_LOCALPORTRANGE.3 CURLOPT_LOGIN_OPTIONS.3 CURLOPT_LOW_SPEED_LIMIT.3 CURLOPT_LOW_SPEED_TIME.3 CURLOPT_MAIL_AUTH.3 CURLOPT_MAIL_FROM.3 CURLOPT_MAIL_RCPT.3 CURLOPT_MAXCONNECTS.3 CURLOPT_MAXFILESIZE.3 CURLOPT_MAXFILESIZE_LARGE.3 CURLOPT_MAXREDIRS.3 CURLOPT_MAX_RECV_SPEED_LARGE.3 CURLOPT_MAX_SEND_SPEED_LARGE.3 CURLOPT_MIMEPOST.3 CURLOPT_NETRC.3 CURLOPT_NETRC_FILE.3 CURLOPT_NEW_DIRECTORY_PERMS.3 CURLOPT_NEW_FILE_PERMS.3 CURLOPT_NOBODY.3 CURLOPT_NOPROGRESS.3 CURLOPT_NOPROXY.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_NOSIGNAL.3 CURLOPT_OPENSOCKETDATA.3 CURLOPT_OPENSOCKETFUNCTION.3 CURLOPT_PASSWORD.3 CURLOPT_PATH_AS_IS.3 CURLOPT_PINNEDPUBLICKEY.3 CURLOPT_PIPEWAIT.3 CURLOPT_PORT.3 CURLOPT_POST.3 CURLOPT_POSTFIELDS.3 CURLOPT_POSTFIELDSIZE.3 CURLOPT_POSTFIELDSIZE_LARGE.3 CURLOPT_POSTQUOTE.3 CURLOPT_POSTREDIR.3 CURLOPT_PREQUOTE.3 CURLOPT_PRE_PROXY.3 CURLOPT_PRIVATE.3 CURLOPT_PROGRESSDATA.3 CURLOPT_PROGRESSFUNCTION.3 CURLOPT_PROTOCOLS.3 CURLOPT_PROXY.3 CURLOPT_PROXYAUTH.3 CURLOPT_PROXYHEADER.3 CURLOPT_PROXYPASSWORD.3 CURLOPT_PROXYPORT.3 CURLOPT_PROXYTYPE.3 CURLOPT_PROXYUSERNAME.3 CURLOPT_PROXYUSERPWD.3 CURLOPT_PROXY_CAINFO.3 CURLOPT_PROXY_CAPATH.3 CURLOPT_PROXY_CRLFILE.3 CURLOPT_PROXY_KEYPASSWD.3 CURLOPT_PROXY_PINNEDPUBLICKEY.3 CURLOPT_PROXY_SERVICE_NAME.3 CURLOPT_PROXY_SSLCERT.3 CURLOPT_PROXY_SSLCERTTYPE.3 CURLOPT_PROXY_SSLKEY.3 CURLOPT_PROXY_SSLKEYTYPE.3 CURLOPT_PROXY_SSLVERSION.3 CURLOPT_PROXY_SSL_CIPHER_LIST.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_PROXY_SSL_OPTIONS.3 CURLOPT_PROXY_SSL_VERIFYHOST.3 CURLOPT_PROXY_SSL_VERIFYPEER.3 CURLOPT_PROXY_TLS13_CIPHERS.3 CURLOPT_PROXY_TLSAUTH_PASSWORD.3 CURLOPT_PROXY_TLSAUTH_TYPE.3 CURLOPT_PROXY_TLSAUTH_USERNAME.3 CURLOPT_PROXY_TRANSFER_MODE.3 CURLOPT_PUT.3 CURLOPT_QUOTE.3 CURLOPT_RANDOM_FILE.3 CURLOPT_RANGE.3 CURLOPT_READDATA.3 CURLOPT_READFUNCTION.3 CURLOPT_REDIR_PROTOCOLS.3 CURLOPT_REFERER.3 CURLOPT_REQUEST_TARGET.3 CURLOPT_RESOLVE.3 CURLOPT_RESOLVER_START_DATA.3 CURLOPT_RESOLVER_START_FUNCTION.3 CURLOPT_RESUME_FROM.3 CURLOPT_RESUME_FROM_LARGE.3 CURLOPT_RTSP_CLIENT_CSEQ.3 CURLOPT_RTSP_REQUEST.3 CURLOPT_RTSP_SERVER_CSEQ.3 CURLOPT_RTSP_SESSION_ID.3 CURLOPT_RTSP_STREAM_URI.3 CURLOPT_RTSP_TRANSPORT.3 CURLOPT_SASL_IR.3 CURLOPT_SEEKDATA.3 CURLOPT_SEEKFUNCTION.3 CURLOPT_SERVICE_NAME.3 CURLOPT_SHARE.3 CURLOPT_SOCKOPTDATA.3 CURLOPT_SOCKOPTFUNCTION.3 CURLOPT_SOCKS5_AUTH.3 CURLOPT_SOCKS5_GSSAPI_NEC.3 CURLOPT_SOCKS5_GSSAPI_SERVICE.3 CURLOPT_SSH_AUTH_TYPES.3 CURLOPT_SSH_COMPRESSION.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3 CURLOPT_SSH_KEYDATA.3 CURLOPT_SSH_KEYFUNCTION.3 CURLOPT_SSH_KNOWNHOSTS.3 CURLOPT_SSH_PRIVATE_KEYFILE.3 CURLOPT_SSH_PUBLIC_KEYFILE.3 CURLOPT_SSLCERT.3 CURLOPT_SSLCERTTYPE.3 CURLOPT_SSLENGINE.3 CURLOPT_SSLENGINE_DEFAULT.3 CURLOPT_SSLKEY.3 CURLOPT_SSLKEYTYPE.3 CURLOPT_SSLVERSION.3 CURLOPT_SSL_CIPHER_LIST.3 CURLOPT_SSL_CTX_DATA.3 CURLOPT_SSL_CTX_FUNCTION.3 CURLOPT_SSL_ENABLE_ALPN.3 CURLOPT_SSL_ENABLE_NPN.3 CURLOPT_SSL_FALSESTART.3 CURLOPT_SSL_OPTIONS.3 CURLOPT_SSL_SESSIONID_CACHE.3 CURLOPT_SSL_VERIFYHOST.3 CURLOPT_SSL_VERIFYPEER.3 CURLOPT_SSL_VERIFYSTATUS.3 CURLOPT_STDERR.3 CURLOPT_STREAM_DEPENDS.3 CURLOPT_STREAM_DEPENDS_E.3 CURLOPT_STREAM_WEIGHT.3 CURLOPT_SUPPRESS_CONNECT_HEADERS.3 CURLOPT_TCP_FASTOPEN.3 CURLOPT_TCP_KEEPALIVE.3 CURLOPT_TCP_KEEPIDLE.3 CURLOPT_TCP_KEEPINTVL.3 CURLOPT_TCP_NODELAY.3 CURLOPT_TELNETOPTIONS.3 CURLOPT_TFTP_BLKSIZE.3 CURLOPT_TFTP_NO_OPTIONS.3 CURLOPT_TIMECONDITION.3 CURLOPT_TIMEOUT.3 CURLOPT_TIMEOUT_MS.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_TIMEVALUE.3 CURLOPT_TIMEVALUE_LARGE.3 CURLOPT_TLS13_CIPHERS.3 CURLOPT_TLSAUTH_PASSWORD.3 CURLOPT_TLSAUTH_TYPE.3 CURLOPT_TLSAUTH_USERNAME.3 CURLOPT_TRANSFERTEXT.3 CURLOPT_TRANSFER_ENCODING.3 CURLOPT_UNIX_SOCKET_PATH.3 CURLOPT_UNRESTRICTED_AUTH.3 CURLOPT_UPLOAD.3 CURLOPT_UPLOAD_BUFFERSIZE.3 CURLOPT_URL.3 CURLOPT_USERAGENT.3 CURLOPT_USERNAME.3 CURLOPT_USERPWD.3 CURLOPT_USE_SSL.3 CURLOPT_VERBOSE.3 CURLOPT_WILDCARDMATCH.3 CURLOPT_WRITEDATA.3 CURLOPT_WRITEFUNCTION.3 CURLOPT_XFERINFODATA.3 CURLOPT_XFERINFOFUNCTION.3 CURLOPT_XOAUTH2_BEARER.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/libcurl/opts'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/libcurl/opts'
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/libcurl'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/libcurl'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/aclocal'
+ /usr/bin/install -c -m 644 libcurl.m4 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/aclocal'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_easy_cleanup.3 curl_easy_duphandle.3 curl_easy_escape.3 curl_easy_getinfo.3 curl_easy_init.3 curl_easy_pause.3 curl_easy_perform.3 curl_easy_recv.3 curl_easy_reset.3 curl_easy_send.3 curl_easy_setopt.3 curl_easy_strerror.3 curl_easy_unescape.3 curl_easy_upkeep.3 curl_escape.3 curl_formadd.3 curl_formfree.3 curl_formget.3 curl_free.3 curl_getdate.3 curl_getenv.3 curl_global_cleanup.3 curl_global_init.3 curl_global_init_mem.3 curl_global_sslset.3 curl_mime_addpart.3 curl_mime_data.3 curl_mime_data_cb.3 curl_mime_encoder.3 curl_mime_filedata.3 curl_mime_filename.3 curl_mime_free.3 curl_mime_headers.3 curl_mime_init.3 curl_mime_name.3 curl_mime_subparts.3 curl_mime_type.3 curl_mprintf.3 curl_multi_add_handle.3 curl_multi_assign.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_multi_cleanup.3 curl_multi_fdset.3 curl_multi_info_read.3 curl_multi_init.3 curl_multi_perform.3 curl_multi_remove_handle.3 curl_multi_setopt.3 curl_multi_socket.3 curl_multi_socket_action.3 curl_multi_socket_all.3 curl_multi_strerror.3 curl_multi_timeout.3 curl_multi_wait.3 curl_share_cleanup.3 curl_share_init.3 curl_share_setopt.3 curl_share_strerror.3 curl_slist_append.3 curl_slist_free_all.3 curl_strequal.3 curl_strnequal.3 curl_unescape.3 curl_url.3 curl_url_cleanup.3 curl_url_dup.3 curl_url_get.3 curl_url_set.3 curl_version.3 curl_version_info.3 libcurl-easy.3 libcurl-env.3 libcurl-errors.3 libcurl-multi.3 libcurl-security.3 libcurl-share.3 libcurl-symbols.3 libcurl-thread.3 libcurl-tutorial.3 libcurl-url.3 libcurl.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-gnutls/usr/share/man/man3'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/libcurl'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/libcurl'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/docs/libcurl'
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls'
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls'
+make[2]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls'
+/usr/bin/make -C debian/build-nss				\
+	DESTDIR=/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss install
+make[2]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss'
+Making install in lib
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/lib'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/lib'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu'
+ /bin/bash ../libtool   --mode=install /usr/bin/install -c   libcurl.la '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu'
+libtool: install: /usr/bin/install -c .libs/libcurl.so.4.5.0 /root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0
+libtool: install: (cd /root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu && { ln -s -f libcurl.so.4.5.0 libcurl.so.4 || { rm -f libcurl.so.4 && ln -s libcurl.so.4.5.0 libcurl.so.4; }; })
+libtool: install: (cd /root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu && { ln -s -f libcurl.so.4.5.0 libcurl.so || { rm -f libcurl.so && ln -s libcurl.so.4.5.0 libcurl.so; }; })
+libtool: install: /usr/bin/install -c .libs/libcurl.lai /root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu/libcurl.la
+libtool: install: /usr/bin/install -c .libs/libcurl.a /root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu/libcurl.a
+libtool: install: chmod 644 /root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu/libcurl.a
+libtool: install: ranlib /root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu/libcurl.a
+libtool: warning: remember to run 'libtool --finish /usr/lib/x86_64-linux-gnu'
+make[4]: Nothing to be done for 'install-data-am'.
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/lib'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/lib'
+Making install in src
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/src'
+Making install in ../docs
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+Making install in .
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+make[6]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl-config.1 /root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/curl.1 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man1'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+Making install in cmdline-opts
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/cmdline-opts'
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/cmdline-opts'
+make[6]: Nothing to be done for 'install-exec-am'.
+make[6]: Nothing to be done for 'install-data-am'.
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/cmdline-opts'
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/cmdline-opts'
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/src'
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/src'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/bin'
+  /bin/bash ../libtool   --mode=install /usr/bin/install -c curl '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/bin'
+libtool: install: /usr/bin/install -c .libs/curl /root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/bin/curl
+make[5]: Nothing to be done for 'install-data-am'.
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/src'
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/src'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/src'
+Making install in scripts
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/scripts'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/scripts'
+make[4]: Nothing to be done for 'install-exec-am'.
+/bin/mkdir -p /root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/zsh/vendor-completions
+/usr/bin/install -c -m 644 _curl /root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/zsh/vendor-completions/_curl
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/scripts'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/scripts'
+make[3]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss'
+make[4]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/bin'
+ /usr/bin/install -c curl-config '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/bin'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu/pkgconfig'
+ /usr/bin/install -c -m 644 libcurl.pc '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/lib/x86_64-linux-gnu/pkgconfig'
+/usr/bin/make  install-data-hook
+make[5]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss'
+cd include && /usr/bin/make install
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/include'
+Making install in curl
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/include/curl'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/include/curl'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/include/x86_64-linux-gnu/curl'
+ /usr/bin/install -c -m 644 curl.h curlver.h easy.h mprintf.h stdcheaders.h multi.h typecheck-gcc.h system.h urlapi.h '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/include/x86_64-linux-gnu/curl'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/include/curl'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/include/curl'
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/include'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/include'
+make[8]: Nothing to be done for 'install-exec-am'.
+make[8]: Nothing to be done for 'install-data-am'.
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/include'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/include'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/include'
+cd docs && /usr/bin/make install
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+Making install in .
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man1'
+ /usr/bin/install -c -m 644 curl-config.1 /root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/curl.1 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man1'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+Making install in cmdline-opts
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/cmdline-opts'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/cmdline-opts'
+make[8]: Nothing to be done for 'install-exec-am'.
+make[8]: Nothing to be done for 'install-data-am'.
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/cmdline-opts'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/cmdline-opts'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs'
+cd docs/libcurl && /usr/bin/make install
+make[6]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/libcurl'
+Making install in opts
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/libcurl/opts'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/libcurl/opts'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_ACTIVESOCKET.3 CURLINFO_APPCONNECT_TIME.3 CURLINFO_APPCONNECT_TIME_T.3 CURLINFO_CERTINFO.3 CURLINFO_CONDITION_UNMET.3 CURLINFO_CONNECT_TIME.3 CURLINFO_CONNECT_TIME_T.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD.3 CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3 CURLINFO_CONTENT_LENGTH_UPLOAD.3 CURLINFO_CONTENT_LENGTH_UPLOAD_T.3 CURLINFO_CONTENT_TYPE.3 CURLINFO_COOKIELIST.3 CURLINFO_EFFECTIVE_URL.3 CURLINFO_FILETIME.3 CURLINFO_FILETIME_T.3 CURLINFO_FTP_ENTRY_PATH.3 CURLINFO_HEADER_SIZE.3 CURLINFO_HTTPAUTH_AVAIL.3 CURLINFO_HTTP_CONNECTCODE.3 CURLINFO_HTTP_VERSION.3 CURLINFO_LASTSOCKET.3 CURLINFO_LOCAL_IP.3 CURLINFO_LOCAL_PORT.3 CURLINFO_NAMELOOKUP_TIME.3 CURLINFO_NAMELOOKUP_TIME_T.3 CURLINFO_NUM_CONNECTS.3 CURLINFO_OS_ERRNO.3 CURLINFO_PRETRANSFER_TIME.3 CURLINFO_PRETRANSFER_TIME_T.3 CURLINFO_PRIMARY_IP.3 CURLINFO_PRIMARY_PORT.3 CURLINFO_PRIVATE.3 CURLINFO_PROTOCOL.3 CURLINFO_PROXYAUTH_AVAIL.3 CURLINFO_PROXY_SSL_VERIFYRESULT.3 CURLINFO_REDIRECT_COUNT.3 CURLINFO_REDIRECT_TIME.3 CURLINFO_REDIRECT_TIME_T.3 CURLINFO_REDIRECT_URL.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLINFO_REQUEST_SIZE.3 CURLINFO_RESPONSE_CODE.3 CURLINFO_RTSP_CLIENT_CSEQ.3 CURLINFO_RTSP_CSEQ_RECV.3 CURLINFO_RTSP_SERVER_CSEQ.3 CURLINFO_RTSP_SESSION_ID.3 CURLINFO_SCHEME.3 CURLINFO_SIZE_DOWNLOAD.3 CURLINFO_SIZE_DOWNLOAD_T.3 CURLINFO_SIZE_UPLOAD.3 CURLINFO_SIZE_UPLOAD_T.3 CURLINFO_SPEED_DOWNLOAD.3 CURLINFO_SPEED_DOWNLOAD_T.3 CURLINFO_SPEED_UPLOAD.3 CURLINFO_SPEED_UPLOAD_T.3 CURLINFO_SSL_ENGINES.3 CURLINFO_SSL_VERIFYRESULT.3 CURLINFO_STARTTRANSFER_TIME.3 CURLINFO_STARTTRANSFER_TIME_T.3 CURLINFO_TLS_SESSION.3 CURLINFO_TLS_SSL_PTR.3 CURLINFO_TOTAL_TIME.3 CURLINFO_TOTAL_TIME_T.3 CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3 CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3 CURLMOPT_MAXCONNECTS.3 CURLMOPT_MAX_HOST_CONNECTIONS.3 CURLMOPT_MAX_PIPELINE_LENGTH.3 CURLMOPT_MAX_TOTAL_CONNECTIONS.3 CURLMOPT_PIPELINING.3 CURLMOPT_PIPELINING_SERVER_BL.3 CURLMOPT_PIPELINING_SITE_BL.3 CURLMOPT_PUSHDATA.3 CURLMOPT_PUSHFUNCTION.3 CURLMOPT_SOCKETDATA.3 CURLMOPT_SOCKETFUNCTION.3 CURLMOPT_TIMERDATA.3 CURLMOPT_TIMERFUNCTION.3 CURLOPT_ABSTRACT_UNIX_SOCKET.3 CURLOPT_ACCEPTTIMEOUT_MS.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_ACCEPT_ENCODING.3 CURLOPT_ADDRESS_SCOPE.3 CURLOPT_APPEND.3 CURLOPT_AUTOREFERER.3 CURLOPT_BUFFERSIZE.3 CURLOPT_CAINFO.3 CURLOPT_CAPATH.3 CURLOPT_CERTINFO.3 CURLOPT_CHUNK_BGN_FUNCTION.3 CURLOPT_CHUNK_DATA.3 CURLOPT_CHUNK_END_FUNCTION.3 CURLOPT_CLOSESOCKETDATA.3 CURLOPT_CLOSESOCKETFUNCTION.3 CURLOPT_UPKEEP_INTERVAL_MS.3 CURLOPT_CONNECTTIMEOUT.3 CURLOPT_CONNECTTIMEOUT_MS.3 CURLOPT_CONNECT_ONLY.3 CURLOPT_CONNECT_TO.3 CURLOPT_CONV_FROM_NETWORK_FUNCTION.3 CURLOPT_CONV_FROM_UTF8_FUNCTION.3 CURLOPT_CONV_TO_NETWORK_FUNCTION.3 CURLOPT_COOKIE.3 CURLOPT_COOKIEFILE.3 CURLOPT_COOKIEJAR.3 CURLOPT_COOKIELIST.3 CURLOPT_COOKIESESSION.3 CURLOPT_COPYPOSTFIELDS.3 CURLOPT_CRLF.3 CURLOPT_CRLFILE.3 CURLOPT_CUSTOMREQUEST.3 CURLOPT_CURLU.3 CURLOPT_DEBUGDATA.3 CURLOPT_DEBUGFUNCTION.3 CURLOPT_DEFAULT_PROTOCOL.3 CURLOPT_DIRLISTONLY.3 CURLOPT_DISALLOW_USERNAME_IN_URL.3 CURLOPT_DNS_CACHE_TIMEOUT.3 CURLOPT_DNS_INTERFACE.3 CURLOPT_DNS_LOCAL_IP4.3 CURLOPT_DNS_LOCAL_IP6.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_DNS_SERVERS.3 CURLOPT_DNS_SHUFFLE_ADDRESSES.3 CURLOPT_DNS_USE_GLOBAL_CACHE.3 CURLOPT_DOH_URL.3 CURLOPT_EGDSOCKET.3 CURLOPT_ERRORBUFFER.3 CURLOPT_EXPECT_100_TIMEOUT_MS.3 CURLOPT_FAILONERROR.3 CURLOPT_FILETIME.3 CURLOPT_FNMATCH_DATA.3 CURLOPT_FNMATCH_FUNCTION.3 CURLOPT_FOLLOWLOCATION.3 CURLOPT_FORBID_REUSE.3 CURLOPT_FRESH_CONNECT.3 CURLOPT_FTPPORT.3 CURLOPT_FTPSSLAUTH.3 CURLOPT_FTP_ACCOUNT.3 CURLOPT_FTP_ALTERNATIVE_TO_USER.3 CURLOPT_FTP_CREATE_MISSING_DIRS.3 CURLOPT_FTP_FILEMETHOD.3 CURLOPT_FTP_RESPONSE_TIMEOUT.3 CURLOPT_FTP_SKIP_PASV_IP.3 CURLOPT_FTP_SSL_CCC.3 CURLOPT_FTP_USE_EPRT.3 CURLOPT_FTP_USE_EPSV.3 CURLOPT_FTP_USE_PRET.3 CURLOPT_GSSAPI_DELEGATION.3 CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3 CURLOPT_HAPROXYPROTOCOL.3 CURLOPT_HEADER.3 CURLOPT_HEADERDATA.3 CURLOPT_HEADERFUNCTION.3 CURLOPT_HEADEROPT.3 CURLOPT_HTTP09_ALLOWED.3 CURLOPT_HTTP200ALIASES.3 CURLOPT_HTTPAUTH.3 CURLOPT_HTTPGET.3 CURLOPT_HTTPHEADER.3 CURLOPT_HTTPPOST.3 CURLOPT_HTTPPROXYTUNNEL.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_HTTP_CONTENT_DECODING.3 CURLOPT_HTTP_TRANSFER_DECODING.3 CURLOPT_HTTP_VERSION.3 CURLOPT_IGNORE_CONTENT_LENGTH.3 CURLOPT_TRAILERDATA.3 CURLOPT_TRAILERFUNCTION.3 CURLOPT_INFILESIZE.3 CURLOPT_INFILESIZE_LARGE.3 CURLOPT_INTERFACE.3 CURLOPT_INTERLEAVEDATA.3 CURLOPT_INTERLEAVEFUNCTION.3 CURLOPT_IOCTLDATA.3 CURLOPT_IOCTLFUNCTION.3 CURLOPT_IPRESOLVE.3 CURLOPT_ISSUERCERT.3 CURLOPT_KEEP_SENDING_ON_ERROR.3 CURLOPT_KEYPASSWD.3 CURLOPT_KRBLEVEL.3 CURLOPT_LOCALPORT.3 CURLOPT_LOCALPORTRANGE.3 CURLOPT_LOGIN_OPTIONS.3 CURLOPT_LOW_SPEED_LIMIT.3 CURLOPT_LOW_SPEED_TIME.3 CURLOPT_MAIL_AUTH.3 CURLOPT_MAIL_FROM.3 CURLOPT_MAIL_RCPT.3 CURLOPT_MAXCONNECTS.3 CURLOPT_MAXFILESIZE.3 CURLOPT_MAXFILESIZE_LARGE.3 CURLOPT_MAXREDIRS.3 CURLOPT_MAX_RECV_SPEED_LARGE.3 CURLOPT_MAX_SEND_SPEED_LARGE.3 CURLOPT_MIMEPOST.3 CURLOPT_NETRC.3 CURLOPT_NETRC_FILE.3 CURLOPT_NEW_DIRECTORY_PERMS.3 CURLOPT_NEW_FILE_PERMS.3 CURLOPT_NOBODY.3 CURLOPT_NOPROGRESS.3 CURLOPT_NOPROXY.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_NOSIGNAL.3 CURLOPT_OPENSOCKETDATA.3 CURLOPT_OPENSOCKETFUNCTION.3 CURLOPT_PASSWORD.3 CURLOPT_PATH_AS_IS.3 CURLOPT_PINNEDPUBLICKEY.3 CURLOPT_PIPEWAIT.3 CURLOPT_PORT.3 CURLOPT_POST.3 CURLOPT_POSTFIELDS.3 CURLOPT_POSTFIELDSIZE.3 CURLOPT_POSTFIELDSIZE_LARGE.3 CURLOPT_POSTQUOTE.3 CURLOPT_POSTREDIR.3 CURLOPT_PREQUOTE.3 CURLOPT_PRE_PROXY.3 CURLOPT_PRIVATE.3 CURLOPT_PROGRESSDATA.3 CURLOPT_PROGRESSFUNCTION.3 CURLOPT_PROTOCOLS.3 CURLOPT_PROXY.3 CURLOPT_PROXYAUTH.3 CURLOPT_PROXYHEADER.3 CURLOPT_PROXYPASSWORD.3 CURLOPT_PROXYPORT.3 CURLOPT_PROXYTYPE.3 CURLOPT_PROXYUSERNAME.3 CURLOPT_PROXYUSERPWD.3 CURLOPT_PROXY_CAINFO.3 CURLOPT_PROXY_CAPATH.3 CURLOPT_PROXY_CRLFILE.3 CURLOPT_PROXY_KEYPASSWD.3 CURLOPT_PROXY_PINNEDPUBLICKEY.3 CURLOPT_PROXY_SERVICE_NAME.3 CURLOPT_PROXY_SSLCERT.3 CURLOPT_PROXY_SSLCERTTYPE.3 CURLOPT_PROXY_SSLKEY.3 CURLOPT_PROXY_SSLKEYTYPE.3 CURLOPT_PROXY_SSLVERSION.3 CURLOPT_PROXY_SSL_CIPHER_LIST.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_PROXY_SSL_OPTIONS.3 CURLOPT_PROXY_SSL_VERIFYHOST.3 CURLOPT_PROXY_SSL_VERIFYPEER.3 CURLOPT_PROXY_TLS13_CIPHERS.3 CURLOPT_PROXY_TLSAUTH_PASSWORD.3 CURLOPT_PROXY_TLSAUTH_TYPE.3 CURLOPT_PROXY_TLSAUTH_USERNAME.3 CURLOPT_PROXY_TRANSFER_MODE.3 CURLOPT_PUT.3 CURLOPT_QUOTE.3 CURLOPT_RANDOM_FILE.3 CURLOPT_RANGE.3 CURLOPT_READDATA.3 CURLOPT_READFUNCTION.3 CURLOPT_REDIR_PROTOCOLS.3 CURLOPT_REFERER.3 CURLOPT_REQUEST_TARGET.3 CURLOPT_RESOLVE.3 CURLOPT_RESOLVER_START_DATA.3 CURLOPT_RESOLVER_START_FUNCTION.3 CURLOPT_RESUME_FROM.3 CURLOPT_RESUME_FROM_LARGE.3 CURLOPT_RTSP_CLIENT_CSEQ.3 CURLOPT_RTSP_REQUEST.3 CURLOPT_RTSP_SERVER_CSEQ.3 CURLOPT_RTSP_SESSION_ID.3 CURLOPT_RTSP_STREAM_URI.3 CURLOPT_RTSP_TRANSPORT.3 CURLOPT_SASL_IR.3 CURLOPT_SEEKDATA.3 CURLOPT_SEEKFUNCTION.3 CURLOPT_SERVICE_NAME.3 CURLOPT_SHARE.3 CURLOPT_SOCKOPTDATA.3 CURLOPT_SOCKOPTFUNCTION.3 CURLOPT_SOCKS5_AUTH.3 CURLOPT_SOCKS5_GSSAPI_NEC.3 CURLOPT_SOCKS5_GSSAPI_SERVICE.3 CURLOPT_SSH_AUTH_TYPES.3 CURLOPT_SSH_COMPRESSION.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3 CURLOPT_SSH_KEYDATA.3 CURLOPT_SSH_KEYFUNCTION.3 CURLOPT_SSH_KNOWNHOSTS.3 CURLOPT_SSH_PRIVATE_KEYFILE.3 CURLOPT_SSH_PUBLIC_KEYFILE.3 CURLOPT_SSLCERT.3 CURLOPT_SSLCERTTYPE.3 CURLOPT_SSLENGINE.3 CURLOPT_SSLENGINE_DEFAULT.3 CURLOPT_SSLKEY.3 CURLOPT_SSLKEYTYPE.3 CURLOPT_SSLVERSION.3 CURLOPT_SSL_CIPHER_LIST.3 CURLOPT_SSL_CTX_DATA.3 CURLOPT_SSL_CTX_FUNCTION.3 CURLOPT_SSL_ENABLE_ALPN.3 CURLOPT_SSL_ENABLE_NPN.3 CURLOPT_SSL_FALSESTART.3 CURLOPT_SSL_OPTIONS.3 CURLOPT_SSL_SESSIONID_CACHE.3 CURLOPT_SSL_VERIFYHOST.3 CURLOPT_SSL_VERIFYPEER.3 CURLOPT_SSL_VERIFYSTATUS.3 CURLOPT_STDERR.3 CURLOPT_STREAM_DEPENDS.3 CURLOPT_STREAM_DEPENDS_E.3 CURLOPT_STREAM_WEIGHT.3 CURLOPT_SUPPRESS_CONNECT_HEADERS.3 CURLOPT_TCP_FASTOPEN.3 CURLOPT_TCP_KEEPALIVE.3 CURLOPT_TCP_KEEPIDLE.3 CURLOPT_TCP_KEEPINTVL.3 CURLOPT_TCP_NODELAY.3 CURLOPT_TELNETOPTIONS.3 CURLOPT_TFTP_BLKSIZE.3 CURLOPT_TFTP_NO_OPTIONS.3 CURLOPT_TIMECONDITION.3 CURLOPT_TIMEOUT.3 CURLOPT_TIMEOUT_MS.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 CURLOPT_TIMEVALUE.3 CURLOPT_TIMEVALUE_LARGE.3 CURLOPT_TLS13_CIPHERS.3 CURLOPT_TLSAUTH_PASSWORD.3 CURLOPT_TLSAUTH_TYPE.3 CURLOPT_TLSAUTH_USERNAME.3 CURLOPT_TRANSFERTEXT.3 CURLOPT_TRANSFER_ENCODING.3 CURLOPT_UNIX_SOCKET_PATH.3 CURLOPT_UNRESTRICTED_AUTH.3 CURLOPT_UPLOAD.3 CURLOPT_UPLOAD_BUFFERSIZE.3 CURLOPT_URL.3 CURLOPT_USERAGENT.3 CURLOPT_USERNAME.3 CURLOPT_USERPWD.3 CURLOPT_USE_SSL.3 CURLOPT_VERBOSE.3 CURLOPT_WILDCARDMATCH.3 CURLOPT_WRITEDATA.3 CURLOPT_WRITEFUNCTION.3 CURLOPT_XFERINFODATA.3 CURLOPT_XFERINFOFUNCTION.3 CURLOPT_XOAUTH2_BEARER.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/libcurl/opts'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/libcurl/opts'
+make[7]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/libcurl'
+make[8]: Entering directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/libcurl'
+make[8]: Nothing to be done for 'install-exec-am'.
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/aclocal'
+ /usr/bin/install -c -m 644 libcurl.m4 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/aclocal'
+ /bin/mkdir -p '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_easy_cleanup.3 curl_easy_duphandle.3 curl_easy_escape.3 curl_easy_getinfo.3 curl_easy_init.3 curl_easy_pause.3 curl_easy_perform.3 curl_easy_recv.3 curl_easy_reset.3 curl_easy_send.3 curl_easy_setopt.3 curl_easy_strerror.3 curl_easy_unescape.3 curl_easy_upkeep.3 curl_escape.3 curl_formadd.3 curl_formfree.3 curl_formget.3 curl_free.3 curl_getdate.3 curl_getenv.3 curl_global_cleanup.3 curl_global_init.3 curl_global_init_mem.3 curl_global_sslset.3 curl_mime_addpart.3 curl_mime_data.3 curl_mime_data_cb.3 curl_mime_encoder.3 curl_mime_filedata.3 curl_mime_filename.3 curl_mime_free.3 curl_mime_headers.3 curl_mime_init.3 curl_mime_name.3 curl_mime_subparts.3 curl_mime_type.3 curl_mprintf.3 curl_multi_add_handle.3 curl_multi_assign.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+ /usr/bin/install -c -m 644 curl_multi_cleanup.3 curl_multi_fdset.3 curl_multi_info_read.3 curl_multi_init.3 curl_multi_perform.3 curl_multi_remove_handle.3 curl_multi_setopt.3 curl_multi_socket.3 curl_multi_socket_action.3 curl_multi_socket_all.3 curl_multi_strerror.3 curl_multi_timeout.3 curl_multi_wait.3 curl_share_cleanup.3 curl_share_init.3 curl_share_setopt.3 curl_share_strerror.3 curl_slist_append.3 curl_slist_free_all.3 curl_strequal.3 curl_strnequal.3 curl_unescape.3 curl_url.3 curl_url_cleanup.3 curl_url_dup.3 curl_url_get.3 curl_url_set.3 curl_version.3 curl_version_info.3 libcurl-easy.3 libcurl-env.3 libcurl-errors.3 libcurl-multi.3 libcurl-security.3 libcurl-share.3 libcurl-symbols.3 libcurl-thread.3 libcurl-tutorial.3 libcurl-url.3 libcurl.3 '/root/instalables/libcurl34/curl-7.64.0/debian/tmp-nss/usr/share/man/man3'
+make[8]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/libcurl'
+make[7]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/libcurl'
+make[6]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss/docs/libcurl'
+make[5]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss'
+make[4]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss'
+make[3]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss'
+make[2]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0/debian/build-nss'
+dh_install -plibcurl3-gnutls -plibcurl4-gnutls-dev	\
+	--sourcedir=debian/tmp-gnutls
+dh_install -plibcurl3-nss -plibcurl4-nss-dev		\
+	--sourcedir=debian/tmp-nss
+dh_install -pcurl -plibcurl4 -plibcurl4-openssl-dev -plibcurl4-doc \
+	--sourcedir=debian/tmp
+sed -i "/dependency_libs/ s/'.*'/''/" `find . -name '*.la'`
+sed -e "/-lcurl /s|`krb5-config --libs gssapi`|\`krb5-config --libs gssapi\`|" \
+    -e "/--prefix/s|/x86_64-linux-gnu'|/'\\\\\`dpkg-architecture -qDEB_HOST_MULTIARCH\\\\\`|g" \
+    -e "/--prefix/s|=x86_64-linux-gnu'|='\\\\\`dpkg-architecture -qDEB_BUILD_GNU_TYPE\\\\\`|g" \
+    -e "/-fdebug-prefix-map=/s|\(-fdebug-prefix-map=\)/[^ ]*=.||" \
+    -i `find . -name curl-config`
+make[1]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0'
+   dh_installdocs
+   debian/rules override_dh_installchangelogs
+make[1]: Entering directory '/root/instalables/libcurl34/curl-7.64.0'
+dh_installchangelogs CHANGES
+make[1]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0'
+   dh_installexamples
+   dh_installman
+   dh_lintian
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   debian/rules override_dh_compress
+make[1]: Entering directory '/root/instalables/libcurl34/curl-7.64.0'
+dh_compress -X.pdf
+make[1]: Leaving directory '/root/instalables/libcurl34/curl-7.64.0'
+   dh_fixperms
+   dh_missing
+dh_missing: usr/share/man/man1/curl.1 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man1/curl-config.1 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_STARTTRANSFER_TIME_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_NAMELOOKUP_TIME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXYPORT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_unescape.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_READFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl-multi.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_global_init_mem.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_EGDSOCKET.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_escape.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTP_ALTERNATIVE_TO_USER.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_OS_ERRNO.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CLOSESOCKETDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_INFILESIZE_LARGE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_global_cleanup.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FNMATCH_FUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_NOSIGNAL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FOLLOWLOCATION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSH_KNOWNHOSTS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl-thread.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSLENGINE_DEFAULT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_LOGIN_OPTIONS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_CONTENT_TYPE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_PUSHFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TLSAUTH_TYPE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_IOCTLDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_CONNECT_TIME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_SSLKEY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_version.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_GSSAPI_DELEGATION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_add_handle.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_MAX_HOST_CONNECTIONS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RESOLVE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_escape.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSLKEYTYPE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTP_SSL_CCC.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_NOPROGRESS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TIMECONDITION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_TLS_SESSION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTP_USE_PRET.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_SSL_VERIFYHOST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_TOTAL_TIME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_REQUEST_TARGET.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_init.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TLSAUTH_PASSWORD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_FILETIME_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SOCKOPTFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HTTP200ALIASES.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RANDOM_FILE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HTTP_VERSION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_remove_handle.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_OPTIONS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TFTP_NO_OPTIONS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_send.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_SOCKETFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CONV_TO_NETWORK_FUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SPEED_UPLOAD_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_REDIRECT_COUNT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PUT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSH_AUTH_TYPES.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_SERVICE_NAME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FNMATCH_DATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_strequal.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_COOKIELIST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PINNEDPUBLICKEY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTP_FILEMETHOD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_EFFECTIVE_URL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_pause.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_MIMEPOST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_filename.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DNS_SHUFFLE_ADDRESSES.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SPEED_DOWNLOAD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_strerror.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SOCKS5_GSSAPI_SERVICE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_HEADER_SIZE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_SESSIONID_CACHE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_FTP_ENTRY_PATH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_VERIFYHOST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_RTSP_CLIENT_CSEQ.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TRANSFER_ENCODING.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RANGE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_QUOTE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_getdate.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl-errors.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SSL_VERIFYRESULT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TIMEOUT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_CONDITION_UNMET.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TELNETOPTIONS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_REDIR_PROTOCOLS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_socket_action.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_perform.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSH_KEYFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CONNECT_ONLY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_KRBLEVEL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROGRESSDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_NEW_DIRECTORY_PERMS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HTTP_TRANSFER_DECODING.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl-symbols.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CONV_FROM_UTF8_FUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_SSLCERT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TCP_KEEPIDLE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TIMEOUT_MS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RESUME_FROM_LARGE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_KEYPASSWD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SOCKS5_AUTH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_TLS_SSL_PTR.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSH_HOST_PUBLIC_KEY_MD5.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CAPATH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSLKEY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROGRESSFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_NAMELOOKUP_TIME_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TRANSFERTEXT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DNS_USE_GLOBAL_CACHE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_POSTFIELDS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_VERIFYSTATUS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HTTPPROXYTUNNEL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_CTX_FUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_RTSP_CSEQ_RECV.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DEFAULT_PROTOCOL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_CHUNK_LENGTH_PENALTY_SIZE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_OPENSOCKETDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_REFERER.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CONV_FROM_NETWORK_FUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_MAXCONNECTS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_LASTSOCKET.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HEADERFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_NEW_FILE_PERMS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_STREAM_DEPENDS_E.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_MAXCONNECTS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TIMEVALUE_LARGE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CURLU.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TRAILERDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_WILDCARDMATCH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_VERIFYPEER.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_TLSAUTH_TYPE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SOCKOPTDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_MAXFILESIZE_LARGE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl-security.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_LOCAL_IP.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DOH_URL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_INFILESIZE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_EXPECT_100_TIMEOUT_MS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_fdset.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SIZE_DOWNLOAD_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_socket.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TCP_FASTOPEN.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_KEEP_SENDING_ON_ERROR.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_NOBODY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_url_cleanup.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_USERPWD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PRIVATE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HEADER.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_TRANSFER_MODE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SEEKDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TLSAUTH_USERNAME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTP_SKIP_PASV_IP.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SASL_IR.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_ACCEPTTIMEOUT_MS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl-easy.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_LOCAL_PORT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_LOCALPORTRANGE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CONNECT_TO.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_MAIL_RCPT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PATH_AS_IS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_ADDRESS_SCOPE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTPSSLAUTH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HAPPY_EYEBALLS_TIMEOUT_MS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_CONTENT_LENGTH_PENALTY_SIZE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_IOCTLFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RTSP_SERVER_CSEQ.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_PROXY_SSL_VERIFYRESULT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_RTSP_SESSION_ID.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_perform.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_APPCONNECT_TIME_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TFTP_BLKSIZE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_HTTPAUTH_AVAIL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RESOLVER_START_DATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_url.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_KEYPASSWD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_USERNAME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_free.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_PRIVATE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl-url.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_TOTAL_TIME_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_PRIMARY_IP.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_NETRC.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSLCERTTYPE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_ABSTRACT_UNIX_SOCKET.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_url_dup.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_CRLFILE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_duphandle.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_LOCALPORT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_init.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_HTTP_CONNECTCODE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CRLFILE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_CERTINFO.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HTTPGET.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_ENABLE_NPN.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_formfree.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_USERAGENT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_POSTFIELDSIZE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_formget.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_NETRC_FILE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_share_setopt.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_MAX_PIPELINE_LENGTH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_COOKIELIST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_url_set.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_UNRESTRICTED_AUTH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SSL_ENGINES.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_POST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_COOKIESESSION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_formadd.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_upkeep.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RTSP_STREAM_URI.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_WRITEDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_ENABLE_ALPN.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_setopt.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SIZE_DOWNLOAD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_url_get.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXYAUTH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSH_KEYDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_ERRORBUFFER.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_INTERLEAVEFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_PIPELINING_SERVER_BL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXYUSERNAME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PASSWORD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXYTYPE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_MAXREDIRS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_XFERINFODATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_POSTREDIR.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_NOPROXY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXYPASSWORD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_addpart.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_SSLKEYTYPE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FRESH_CONNECT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_TIMERFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_INTERFACE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SOCKS5_GSSAPI_NEC.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_CAPATH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TCP_KEEPINTVL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_TLS13_CIPHERS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SPEED_UPLOAD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_PROXYAUTH_AVAIL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_timeout.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_SSLCERTTYPE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_CIPHER_LIST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_cleanup.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DNS_LOCAL_IP4.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_data.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_SSL_CIPHER_LIST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SPEED_DOWNLOAD_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CERTINFO.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSLENGINE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CAINFO.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SEEKFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_XFERINFOFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_CAINFO.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_MAX_SEND_SPEED_LARGE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CONNECTTIMEOUT_MS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_STREAM_DEPENDS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_REDIRECT_URL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_UNIX_SOCKET_PATH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_TLSAUTH_USERNAME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_reset.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl-tutorial.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_STREAM_WEIGHT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RTSP_SESSION_ID.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_OPENSOCKETFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSH_COMPRESSION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DNS_INTERFACE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_init.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_STARTTRANSFER_TIME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RTSP_REQUEST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_type.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_RTSP_SERVER_CSEQ.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_PROTOCOL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HTTPAUTH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SERVICE_NAME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CHUNK_BGN_FUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_READDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_LOW_SPEED_LIMIT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CRLF.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_strerror.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SIZE_UPLOAD_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HTTP_CONTENT_DECODING.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_filedata.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSLCERT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HAPROXYPROTOCOL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_free.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CHUNK_DATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_FILETIME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_PRETRANSFER_TIME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_ACCEPT_ENCODING.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_share_init.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CHUNK_END_FUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_subparts.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CUSTOMREQUEST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTP_USE_EPRT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_headers.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_APPEND.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_socket_all.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_POSTFIELDSIZE_LARGE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_NUM_CONNECTS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_PUSHDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_REQUEST_SIZE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TRAILERFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TCP_NODELAY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_CONTENT_LENGTH_DOWNLOAD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_getinfo.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_MAXFILESIZE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_strnequal.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTP_RESPONSE_TIMEOUT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_POSTQUOTE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DEBUGFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_share_cleanup.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_COOKIEJAR.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RTSP_CLIENT_CSEQ.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FILETIME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DNS_CACHE_TIMEOUT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_slist_append.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_XOAUTH2_BEARER.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_setopt.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RESUME_FROM.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_CONTENT_LENGTH_UPLOAD_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_info_read.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_global_init.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_PIPELINING.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_CONNECT_TIME_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_PRIMARY_PORT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TIMEVALUE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TCP_KEEPALIVE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_PIPELINING_SITE_BL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTP_CREATE_MISSING_DIRS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_LOW_SPEED_TIME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_PRETRANSFER_TIME_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PORT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mprintf.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_UPLOAD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_COOKIEFILE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_MAX_TOTAL_CONNECTIONS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HEADERDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_AUTOREFERER.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_share_strerror.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_MAIL_FROM.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_wait.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_slist_free_all.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_TLS13_CIPHERS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SCHEME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_ISSUERCERT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_HTTP_VERSION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DEBUGDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HTTPPOST.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_RESPONSE_CODE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_APPCONNECT_TIME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_WRITEFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_BUFFERSIZE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_STDERR.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HTTPHEADER.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_SOCKETDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_SSLVERSION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl-env.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_REDIRECT_TIME.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PREQUOTE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DISALLOW_USERNAME_IN_URL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSH_PUBLIC_KEYFILE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTP_USE_EPSV.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_multi_assign.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_VERBOSE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_IPRESOLVE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HTTP09_ALLOWED.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_SIZE_UPLOAD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_CONTENT_LENGTH_UPLOAD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLMOPT_TIMERDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_recv.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_COOKIE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_global_sslset.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROTOCOLS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_PINNEDPUBLICKEY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_getenv.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SHARE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_MAX_RECV_SPEED_LARGE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_HEADEROPT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_TLSAUTH_PASSWORD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_CTX_DATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_MAIL_AUTH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSL_FALSESTART.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DNS_SERVERS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DNS_LOCAL_IP6.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/libcurl-share.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FAILONERROR.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_version_info.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_name.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_REDIRECT_TIME_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_encoder.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_ACTIVESOCKET.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_unescape.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CONNECTTIMEOUT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_COPYPOSTFIELDS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLINFO_CONTENT_LENGTH_DOWNLOAD_T.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_IGNORE_CONTENT_LENGTH.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_mime_data_cb.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_UPLOAD_BUFFERSIZE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RTSP_TRANSPORT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FORBID_REUSE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PRE_PROXY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_DIRLISTONLY.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_UPKEEP_INTERVAL_MS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_URL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTPPORT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_FTP_ACCOUNT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_SSL_VERIFYPEER.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_CLOSESOCKETFUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_USE_SSL.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SUPPRESS_CONNECT_HEADERS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSLVERSION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_SSH_PRIVATE_KEYFILE.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXY_SSL_OPTIONS.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXYHEADER.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/curl_easy_cleanup.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PIPEWAIT.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_RESOLVER_START_FUNCTION.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_PROXYUSERPWD.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/man/man3/CURLOPT_INTERLEAVEDATA.3 exists in debian/tmp but is not installed to anywhere
+dh_missing: usr/share/aclocal/libcurl.m4 exists in debian/tmp but is not installed to anywhere
+	The following debhelper tools have reported what they installed (with files per package)
+	 * dh_install: curl (6), libcurl3-gnutls (18), libcurl3-nss (18), libcurl4 (18), libcurl4-doc (0), libcurl4-gnutls-dev (27), libcurl4-nss-dev (27), libcurl4-openssl-dev (30)
+	 * dh_installdocs: curl (0), libcurl3-gnutls (0), libcurl3-nss (0), libcurl4 (0), libcurl4-doc (14), libcurl4-gnutls-dev (0), libcurl4-nss-dev (0), libcurl4-openssl-dev (0)
+	 * dh_installexamples: curl (0), libcurl3-gnutls (0), libcurl3-nss (0), libcurl4 (0), libcurl4-doc (117), libcurl4-gnutls-dev (0), libcurl4-nss-dev (0), libcurl4-openssl-dev (0)
+	 * dh_installman: curl (1), libcurl3-gnutls (0), libcurl3-nss (0), libcurl4 (0), libcurl4-doc (424), libcurl4-gnutls-dev (1), libcurl4-nss-dev (1), libcurl4-openssl-dev (1)
+	If the missing files are installed by another tool, please file a bug against it.
+	When filing the report, if the tool is not part of debhelper itself, please reference the
+	"Logging helpers and dh_missing" section from the "PROGRAMMING" guide for debhelper (10.6.3+).
+	  (in the debhelper package: /usr/share/doc/debhelper/PROGRAMMING.gz)
+	Be sure to test with dpkg-buildpackage -A/-B as the results may vary when only a subset is built
+	For a short-term work-around: Add the files to debian/not-installed
+   dh_dwz
+   dh_strip
+   dh_makeshlibs
+dpkg-gensymbols: warning: some new symbols appeared in the symbols file: see diff output below
+dpkg-gensymbols: warning: debian/libcurl4/DEBIAN/symbols doesn't match completely debian/libcurl4.symbols
+--- debian/libcurl4.symbols (libcurl4_7.64.0-4_amd64)
++++ dpkg-gensymbolsYEjOo3	2020-04-14 17:14:12.532622958 -0500
+@@ -1,84 +1,153 @@
+ libcurl.so.4 libcurl4 #MINVER#
++ CURL_OPENSSL_3@CURL_OPENSSL_3 7.64.0-4
+  CURL_OPENSSL_4@CURL_OPENSSL_4 7.16.2
+  HIDDEN@HIDDEN 7.16.2
++ curl_easy_cleanup@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_cleanup@CURL_OPENSSL_4 7.16.2
++ curl_easy_duphandle@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_duphandle@CURL_OPENSSL_4 7.16.2
++ curl_easy_escape@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_escape@CURL_OPENSSL_4 7.16.2
++ curl_easy_getinfo@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_getinfo@CURL_OPENSSL_4 7.16.2
++ curl_easy_init@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_init@CURL_OPENSSL_4 7.16.2
++ curl_easy_pause@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_pause@CURL_OPENSSL_4 7.18.0
++ curl_easy_perform@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_perform@CURL_OPENSSL_4 7.16.2
++ curl_easy_recv@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_recv@CURL_OPENSSL_4 7.18.2
++ curl_easy_reset@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_reset@CURL_OPENSSL_4 7.16.2
++ curl_easy_send@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_send@CURL_OPENSSL_4 7.18.2
++ curl_easy_setopt@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_setopt@CURL_OPENSSL_4 7.16.2
+  curl_easy_strerror@CURL_OPENSSL_4 7.16.2
++ curl_easy_unescape@CURL_OPENSSL_3 7.64.0-4
+  curl_easy_unescape@CURL_OPENSSL_4 7.16.2
+  curl_easy_upkeep@CURL_OPENSSL_4 7.63.0
++ curl_escape@CURL_OPENSSL_3 7.64.0-4
+  curl_escape@CURL_OPENSSL_4 7.16.2
++ curl_formadd@CURL_OPENSSL_3 7.64.0-4
+  curl_formadd@CURL_OPENSSL_4 7.16.2
++ curl_formfree@CURL_OPENSSL_3 7.64.0-4
+  curl_formfree@CURL_OPENSSL_4 7.16.2
++ curl_formget@CURL_OPENSSL_3 7.64.0-4
+  curl_formget@CURL_OPENSSL_4 7.16.2
++ curl_free@CURL_OPENSSL_3 7.64.0-4
+  curl_free@CURL_OPENSSL_4 7.16.2
++ curl_getdate@CURL_OPENSSL_3 7.64.0-4
+  curl_getdate@CURL_OPENSSL_4 7.16.2
++ curl_getenv@CURL_OPENSSL_3 7.64.0-4
+  curl_getenv@CURL_OPENSSL_4 7.16.2
++ curl_global_cleanup@CURL_OPENSSL_3 7.64.0-4
+  curl_global_cleanup@CURL_OPENSSL_4 7.16.2
++ curl_global_init@CURL_OPENSSL_3 7.64.0-4
+  curl_global_init@CURL_OPENSSL_4 7.16.2
++ curl_global_init_mem@CURL_OPENSSL_3 7.64.0-4
+  curl_global_init_mem@CURL_OPENSSL_4 7.16.2
++ curl_global_sslset@CURL_OPENSSL_3 7.64.0-4
+  curl_global_sslset@CURL_OPENSSL_4 7.56.1
+  curl_jmpenv@CURL_OPENSSL_4 7.16.2
++ curl_maprintf@CURL_OPENSSL_3 7.64.0-4
+  curl_maprintf@CURL_OPENSSL_4 7.16.2
++ curl_mfprintf@CURL_OPENSSL_3 7.64.0-4
+  curl_mfprintf@CURL_OPENSSL_4 7.16.2
++ curl_mime_addpart@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_addpart@CURL_OPENSSL_4 7.56.1
++ curl_mime_data@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_data@CURL_OPENSSL_4 7.56.1
++ curl_mime_data_cb@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_data_cb@CURL_OPENSSL_4 7.56.1
++ curl_mime_encoder@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_encoder@CURL_OPENSSL_4 7.56.1
++ curl_mime_filedata@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_filedata@CURL_OPENSSL_4 7.56.1
++ curl_mime_filename@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_filename@CURL_OPENSSL_4 7.56.1
++ curl_mime_free@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_free@CURL_OPENSSL_4 7.56.1
++ curl_mime_headers@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_headers@CURL_OPENSSL_4 7.56.1
++ curl_mime_init@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_init@CURL_OPENSSL_4 7.56.1
++ curl_mime_name@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_name@CURL_OPENSSL_4 7.56.1
++ curl_mime_subparts@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_subparts@CURL_OPENSSL_4 7.56.1
++ curl_mime_type@CURL_OPENSSL_3 7.64.0-4
+  curl_mime_type@CURL_OPENSSL_4 7.56.1
++ curl_mprintf@CURL_OPENSSL_3 7.64.0-4
+  curl_mprintf@CURL_OPENSSL_4 7.16.2
++ curl_msnprintf@CURL_OPENSSL_3 7.64.0-4
+  curl_msnprintf@CURL_OPENSSL_4 7.16.2
++ curl_msprintf@CURL_OPENSSL_3 7.64.0-4
+  curl_msprintf@CURL_OPENSSL_4 7.16.2
++ curl_multi_add_handle@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_add_handle@CURL_OPENSSL_4 7.16.2
++ curl_multi_assign@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_assign@CURL_OPENSSL_4 7.16.2
++ curl_multi_cleanup@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_cleanup@CURL_OPENSSL_4 7.16.2
++ curl_multi_fdset@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_fdset@CURL_OPENSSL_4 7.16.2
++ curl_multi_info_read@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_info_read@CURL_OPENSSL_4 7.16.2
++ curl_multi_init@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_init@CURL_OPENSSL_4 7.16.2
++ curl_multi_perform@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_perform@CURL_OPENSSL_4 7.16.2
++ curl_multi_remove_handle@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_remove_handle@CURL_OPENSSL_4 7.16.2
++ curl_multi_setopt@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_setopt@CURL_OPENSSL_4 7.16.2
++ curl_multi_socket@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_socket@CURL_OPENSSL_4 7.16.2
++ curl_multi_socket_action@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_socket_action@CURL_OPENSSL_4 7.16.3
++ curl_multi_socket_all@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_socket_all@CURL_OPENSSL_4 7.16.2
+  curl_multi_strerror@CURL_OPENSSL_4 7.16.2
++ curl_multi_timeout@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_timeout@CURL_OPENSSL_4 7.16.2
++ curl_multi_wait@CURL_OPENSSL_3 7.64.0-4
+  curl_multi_wait@CURL_OPENSSL_4 7.28.0
++ curl_mvaprintf@CURL_OPENSSL_3 7.64.0-4
+  curl_mvaprintf@CURL_OPENSSL_4 7.16.2
++ curl_mvfprintf@CURL_OPENSSL_3 7.64.0-4
+  curl_mvfprintf@CURL_OPENSSL_4 7.16.2
++ curl_mvprintf@CURL_OPENSSL_3 7.64.0-4
+  curl_mvprintf@CURL_OPENSSL_4 7.16.2
++ curl_mvsnprintf@CURL_OPENSSL_3 7.64.0-4
+  curl_mvsnprintf@CURL_OPENSSL_4 7.16.2
++ curl_mvsprintf@CURL_OPENSSL_3 7.64.0-4
+  curl_mvsprintf@CURL_OPENSSL_4 7.16.2
++ curl_pushheader_byname@CURL_OPENSSL_3 7.64.0-4
+  curl_pushheader_byname@CURL_OPENSSL_4 7.44.0
++ curl_pushheader_bynum@CURL_OPENSSL_3 7.64.0-4
+  curl_pushheader_bynum@CURL_OPENSSL_4 7.44.0
+  curl_share_cleanup@CURL_OPENSSL_4 7.16.2
+  curl_share_init@CURL_OPENSSL_4 7.16.2
+  curl_share_setopt@CURL_OPENSSL_4 7.16.2
+  curl_share_strerror@CURL_OPENSSL_4 7.16.2
++ curl_slist_append@CURL_OPENSSL_3 7.64.0-4
+  curl_slist_append@CURL_OPENSSL_4 7.16.2
++ curl_slist_free_all@CURL_OPENSSL_3 7.64.0-4
+  curl_slist_free_all@CURL_OPENSSL_4 7.16.2
++ curl_strequal@CURL_OPENSSL_3 7.64.0-4
+  curl_strequal@CURL_OPENSSL_4 7.16.2
++ curl_strnequal@CURL_OPENSSL_3 7.64.0-4
+  curl_strnequal@CURL_OPENSSL_4 7.16.2
++ curl_unescape@CURL_OPENSSL_3 7.64.0-4
+  curl_unescape@CURL_OPENSSL_4 7.16.2
+  curl_url@CURL_OPENSSL_4 7.63.0
+  curl_url_cleanup@CURL_OPENSSL_4 7.63.0
+  curl_url_dup@CURL_OPENSSL_4 7.63.0
+  curl_url_get@CURL_OPENSSL_4 7.63.0
+  curl_url_set@CURL_OPENSSL_4 7.63.0
++ curl_version@CURL_OPENSSL_3 7.64.0-4
+  curl_version@CURL_OPENSSL_4 7.16.2
++ curl_version_info@CURL_OPENSSL_3 7.64.0-4
+  curl_version_info@CURL_OPENSSL_4 7.16.2
+dpkg-gensymbols: warning: new libraries appeared in the symbols file: libcurl.so.4
+dpkg-gensymbols: warning: some libraries disappeared in the symbols file: libcurl-gnutls.so.4
+dpkg-gensymbols: warning: debian/libcurl3-gnutls/DEBIAN/symbols doesn't match completely debian/libcurl3-gnutls.symbols
+--- debian/libcurl3-gnutls.symbols (libcurl3-gnutls_7.64.0-4_amd64)
++++ dpkg-gensymbolsLGKwZz	2020-04-14 17:14:13.116608454 -0500
+@@ -1,84 +1,85 @@
+-libcurl-gnutls.so.4 libcurl3-gnutls #MINVER#
+- CURL_GNUTLS_3@CURL_GNUTLS_3 7.16.2
+- HIDDEN@HIDDEN 7.16.2
+- curl_easy_cleanup@CURL_GNUTLS_3 7.16.2
+- curl_easy_duphandle@CURL_GNUTLS_3 7.16.2
+- curl_easy_escape@CURL_GNUTLS_3 7.16.2
+- curl_easy_getinfo@CURL_GNUTLS_3 7.16.2
+- curl_easy_init@CURL_GNUTLS_3 7.16.2
+- curl_easy_pause@CURL_GNUTLS_3 7.18.0
+- curl_easy_perform@CURL_GNUTLS_3 7.16.2
+- curl_easy_recv@CURL_GNUTLS_3 7.18.2
+- curl_easy_reset@CURL_GNUTLS_3 7.16.2
+- curl_easy_send@CURL_GNUTLS_3 7.18.2
+- curl_easy_setopt@CURL_GNUTLS_3 7.16.2
+- curl_easy_strerror@CURL_GNUTLS_3 7.16.2
+- curl_easy_unescape@CURL_GNUTLS_3 7.16.2
+- curl_easy_upkeep@CURL_GNUTLS_3 7.63.0
+- curl_escape@CURL_GNUTLS_3 7.16.2
+- curl_formadd@CURL_GNUTLS_3 7.16.2
+- curl_formfree@CURL_GNUTLS_3 7.16.2
+- curl_formget@CURL_GNUTLS_3 7.16.2
+- curl_free@CURL_GNUTLS_3 7.16.2
+- curl_getdate@CURL_GNUTLS_3 7.16.2
+- curl_getenv@CURL_GNUTLS_3 7.16.2
+- curl_global_cleanup@CURL_GNUTLS_3 7.16.2
+- curl_global_init@CURL_GNUTLS_3 7.16.2
+- curl_global_init_mem@CURL_GNUTLS_3 7.16.2
+- curl_global_sslset@CURL_GNUTLS_3 7.56.1
+- curl_jmpenv@CURL_GNUTLS_3 7.16.2
+- curl_maprintf@CURL_GNUTLS_3 7.16.2
+- curl_mfprintf@CURL_GNUTLS_3 7.16.2
+- curl_mime_addpart@CURL_GNUTLS_3 7.56.1
+- curl_mime_data@CURL_GNUTLS_3 7.56.1
+- curl_mime_data_cb@CURL_GNUTLS_3 7.56.1
+- curl_mime_encoder@CURL_GNUTLS_3 7.56.1
+- curl_mime_filedata@CURL_GNUTLS_3 7.56.1
+- curl_mime_filename@CURL_GNUTLS_3 7.56.1
+- curl_mime_free@CURL_GNUTLS_3 7.56.1
+- curl_mime_headers@CURL_GNUTLS_3 7.56.1
+- curl_mime_init@CURL_GNUTLS_3 7.56.1
+- curl_mime_name@CURL_GNUTLS_3 7.56.1
+- curl_mime_subparts@CURL_GNUTLS_3 7.56.1
+- curl_mime_type@CURL_GNUTLS_3 7.56.1
+- curl_mprintf@CURL_GNUTLS_3 7.16.2
+- curl_msnprintf@CURL_GNUTLS_3 7.16.2
+- curl_msprintf@CURL_GNUTLS_3 7.16.2
+- curl_multi_add_handle@CURL_GNUTLS_3 7.16.2
+- curl_multi_assign@CURL_GNUTLS_3 7.16.2
+- curl_multi_cleanup@CURL_GNUTLS_3 7.16.2
+- curl_multi_fdset@CURL_GNUTLS_3 7.16.2
+- curl_multi_info_read@CURL_GNUTLS_3 7.16.2
+- curl_multi_init@CURL_GNUTLS_3 7.16.2
+- curl_multi_perform@CURL_GNUTLS_3 7.16.2
+- curl_multi_remove_handle@CURL_GNUTLS_3 7.16.2
+- curl_multi_setopt@CURL_GNUTLS_3 7.16.2
+- curl_multi_socket@CURL_GNUTLS_3 7.16.2
+- curl_multi_socket_action@CURL_GNUTLS_3 7.16.3
+- curl_multi_socket_all@CURL_GNUTLS_3 7.16.2
+- curl_multi_strerror@CURL_GNUTLS_3 7.16.2
+- curl_multi_timeout@CURL_GNUTLS_3 7.16.2
+- curl_multi_wait@CURL_GNUTLS_3 7.28.0
+- curl_mvaprintf@CURL_GNUTLS_3 7.16.2
+- curl_mvfprintf@CURL_GNUTLS_3 7.16.2
+- curl_mvprintf@CURL_GNUTLS_3 7.16.2
+- curl_mvsnprintf@CURL_GNUTLS_3 7.16.2
+- curl_mvsprintf@CURL_GNUTLS_3 7.16.2
+- curl_pushheader_byname@CURL_GNUTLS_3 7.44.0
+- curl_pushheader_bynum@CURL_GNUTLS_3 7.44.0
+- curl_share_cleanup@CURL_GNUTLS_3 7.16.2
+- curl_share_init@CURL_GNUTLS_3 7.16.2
+- curl_share_setopt@CURL_GNUTLS_3 7.16.2
+- curl_share_strerror@CURL_GNUTLS_3 7.16.2
+- curl_slist_append@CURL_GNUTLS_3 7.16.2
+- curl_slist_free_all@CURL_GNUTLS_3 7.16.2
+- curl_strequal@CURL_GNUTLS_3 7.16.2
+- curl_strnequal@CURL_GNUTLS_3 7.16.2
+- curl_unescape@CURL_GNUTLS_3 7.16.2
+- curl_url@CURL_GNUTLS_3 7.63.0
+- curl_url_cleanup@CURL_GNUTLS_3 7.63.0
+- curl_url_dup@CURL_GNUTLS_3 7.63.0
+- curl_url_get@CURL_GNUTLS_3 7.63.0
+- curl_url_set@CURL_GNUTLS_3 7.63.0
+- curl_version@CURL_GNUTLS_3 7.16.2
+- curl_version_info@CURL_GNUTLS_3 7.16.2
++libcurl.so.4 libcurl3-gnutls #MINVER#
++ CURL_GNUTLS_3@CURL_GNUTLS_3 7.64.0-4
++ CURL_GNUTLS_4@CURL_GNUTLS_4 7.64.0-4
++ HIDDEN@HIDDEN 7.64.0-4
++ curl_easy_cleanup@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_duphandle@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_escape@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_getinfo@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_init@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_pause@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_perform@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_recv@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_reset@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_send@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_setopt@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_strerror@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_unescape@CURL_GNUTLS_4 7.64.0-4
++ curl_easy_upkeep@CURL_GNUTLS_4 7.64.0-4
++ curl_escape@CURL_GNUTLS_4 7.64.0-4
++ curl_formadd@CURL_GNUTLS_4 7.64.0-4
++ curl_formfree@CURL_GNUTLS_4 7.64.0-4
++ curl_formget@CURL_GNUTLS_4 7.64.0-4
++ curl_free@CURL_GNUTLS_4 7.64.0-4
++ curl_getdate@CURL_GNUTLS_4 7.64.0-4
++ curl_getenv@CURL_GNUTLS_4 7.64.0-4
++ curl_global_cleanup@CURL_GNUTLS_4 7.64.0-4
++ curl_global_init@CURL_GNUTLS_4 7.64.0-4
++ curl_global_init_mem@CURL_GNUTLS_4 7.64.0-4
++ curl_global_sslset@CURL_GNUTLS_4 7.64.0-4
++ curl_jmpenv@CURL_GNUTLS_4 7.64.0-4
++ curl_maprintf@CURL_GNUTLS_4 7.64.0-4
++ curl_mfprintf@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_addpart@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_data@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_data_cb@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_encoder@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_filedata@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_filename@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_free@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_headers@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_init@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_name@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_subparts@CURL_GNUTLS_4 7.64.0-4
++ curl_mime_type@CURL_GNUTLS_4 7.64.0-4
++ curl_mprintf@CURL_GNUTLS_4 7.64.0-4
++ curl_msnprintf@CURL_GNUTLS_4 7.64.0-4
++ curl_msprintf@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_add_handle@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_assign@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_cleanup@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_fdset@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_info_read@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_init@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_perform@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_remove_handle@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_setopt@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_socket@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_socket_action@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_socket_all@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_strerror@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_timeout@CURL_GNUTLS_4 7.64.0-4
++ curl_multi_wait@CURL_GNUTLS_4 7.64.0-4
++ curl_mvaprintf@CURL_GNUTLS_4 7.64.0-4
++ curl_mvfprintf@CURL_GNUTLS_4 7.64.0-4
++ curl_mvprintf@CURL_GNUTLS_4 7.64.0-4
++ curl_mvsnprintf@CURL_GNUTLS_4 7.64.0-4
++ curl_mvsprintf@CURL_GNUTLS_4 7.64.0-4
++ curl_pushheader_byname@CURL_GNUTLS_4 7.64.0-4
++ curl_pushheader_bynum@CURL_GNUTLS_4 7.64.0-4
++ curl_share_cleanup@CURL_GNUTLS_4 7.64.0-4
++ curl_share_init@CURL_GNUTLS_4 7.64.0-4
++ curl_share_setopt@CURL_GNUTLS_4 7.64.0-4
++ curl_share_strerror@CURL_GNUTLS_4 7.64.0-4
++ curl_slist_append@CURL_GNUTLS_4 7.64.0-4
++ curl_slist_free_all@CURL_GNUTLS_4 7.64.0-4
++ curl_strequal@CURL_GNUTLS_4 7.64.0-4
++ curl_strnequal@CURL_GNUTLS_4 7.64.0-4
++ curl_unescape@CURL_GNUTLS_4 7.64.0-4
++ curl_url@CURL_GNUTLS_4 7.64.0-4
++ curl_url_cleanup@CURL_GNUTLS_4 7.64.0-4
++ curl_url_dup@CURL_GNUTLS_4 7.64.0-4
++ curl_url_get@CURL_GNUTLS_4 7.64.0-4
++ curl_url_set@CURL_GNUTLS_4 7.64.0-4
++ curl_version@CURL_GNUTLS_4 7.64.0-4
++ curl_version_info@CURL_GNUTLS_4 7.64.0-4
+dpkg-gensymbols: warning: new libraries appeared in the symbols file: libcurl.so.4
+dpkg-gensymbols: warning: some libraries disappeared in the symbols file: libcurl-nss.so.4
+dpkg-gensymbols: warning: debian/libcurl3-nss/DEBIAN/symbols doesn't match completely debian/libcurl3-nss.symbols
+--- debian/libcurl3-nss.symbols (libcurl3-nss_7.64.0-4_amd64)
++++ dpkg-gensymbolsNGptD1	2020-04-14 17:14:13.628595736 -0500
+@@ -1,84 +1,85 @@
+-libcurl-nss.so.4 libcurl3-nss #MINVER#
+- CURL_NSS_3@CURL_NSS_3 7.23.1
+- HIDDEN@HIDDEN 7.23.1
+- curl_easy_cleanup@CURL_NSS_3 7.23.1
+- curl_easy_duphandle@CURL_NSS_3 7.23.1
+- curl_easy_escape@CURL_NSS_3 7.23.1
+- curl_easy_getinfo@CURL_NSS_3 7.23.1
+- curl_easy_init@CURL_NSS_3 7.23.1
+- curl_easy_pause@CURL_NSS_3 7.23.1
+- curl_easy_perform@CURL_NSS_3 7.23.1
+- curl_easy_recv@CURL_NSS_3 7.23.1
+- curl_easy_reset@CURL_NSS_3 7.23.1
+- curl_easy_send@CURL_NSS_3 7.23.1
+- curl_easy_setopt@CURL_NSS_3 7.23.1
+- curl_easy_strerror@CURL_NSS_3 7.23.1
+- curl_easy_unescape@CURL_NSS_3 7.23.1
+- curl_easy_upkeep@CURL_NSS_3 7.63.0
+- curl_escape@CURL_NSS_3 7.23.1
+- curl_formadd@CURL_NSS_3 7.23.1
+- curl_formfree@CURL_NSS_3 7.23.1
+- curl_formget@CURL_NSS_3 7.23.1
+- curl_free@CURL_NSS_3 7.23.1
+- curl_getdate@CURL_NSS_3 7.23.1
+- curl_getenv@CURL_NSS_3 7.23.1
+- curl_global_cleanup@CURL_NSS_3 7.23.1
+- curl_global_init@CURL_NSS_3 7.23.1
+- curl_global_init_mem@CURL_NSS_3 7.23.1
+- curl_global_sslset@CURL_NSS_3 7.56.1
+- curl_jmpenv@CURL_NSS_3 7.23.1
+- curl_maprintf@CURL_NSS_3 7.23.1
+- curl_mfprintf@CURL_NSS_3 7.23.1
+- curl_mime_addpart@CURL_NSS_3 7.56.1
+- curl_mime_data@CURL_NSS_3 7.56.1
+- curl_mime_data_cb@CURL_NSS_3 7.56.1
+- curl_mime_encoder@CURL_NSS_3 7.56.1
+- curl_mime_filedata@CURL_NSS_3 7.56.1
+- curl_mime_filename@CURL_NSS_3 7.56.1
+- curl_mime_free@CURL_NSS_3 7.56.1
+- curl_mime_headers@CURL_NSS_3 7.56.1
+- curl_mime_init@CURL_NSS_3 7.56.1
+- curl_mime_name@CURL_NSS_3 7.56.1
+- curl_mime_subparts@CURL_NSS_3 7.56.1
+- curl_mime_type@CURL_NSS_3 7.56.1
+- curl_mprintf@CURL_NSS_3 7.23.1
+- curl_msnprintf@CURL_NSS_3 7.23.1
+- curl_msprintf@CURL_NSS_3 7.23.1
+- curl_multi_add_handle@CURL_NSS_3 7.23.1
+- curl_multi_assign@CURL_NSS_3 7.23.1
+- curl_multi_cleanup@CURL_NSS_3 7.23.1
+- curl_multi_fdset@CURL_NSS_3 7.23.1
+- curl_multi_info_read@CURL_NSS_3 7.23.1
+- curl_multi_init@CURL_NSS_3 7.23.1
+- curl_multi_perform@CURL_NSS_3 7.23.1
+- curl_multi_remove_handle@CURL_NSS_3 7.23.1
+- curl_multi_setopt@CURL_NSS_3 7.23.1
+- curl_multi_socket@CURL_NSS_3 7.23.1
+- curl_multi_socket_action@CURL_NSS_3 7.23.1
+- curl_multi_socket_all@CURL_NSS_3 7.23.1
+- curl_multi_strerror@CURL_NSS_3 7.23.1
+- curl_multi_timeout@CURL_NSS_3 7.23.1
+- curl_multi_wait@CURL_NSS_3 7.28.0
+- curl_mvaprintf@CURL_NSS_3 7.23.1
+- curl_mvfprintf@CURL_NSS_3 7.23.1
+- curl_mvprintf@CURL_NSS_3 7.23.1
+- curl_mvsnprintf@CURL_NSS_3 7.23.1
+- curl_mvsprintf@CURL_NSS_3 7.23.1
+- curl_pushheader_byname@CURL_NSS_3 7.44.0
+- curl_pushheader_bynum@CURL_NSS_3 7.44.0
+- curl_share_cleanup@CURL_NSS_3 7.23.1
+- curl_share_init@CURL_NSS_3 7.23.1
+- curl_share_setopt@CURL_NSS_3 7.23.1
+- curl_share_strerror@CURL_NSS_3 7.23.1
+- curl_slist_append@CURL_NSS_3 7.23.1
+- curl_slist_free_all@CURL_NSS_3 7.23.1
+- curl_strequal@CURL_NSS_3 7.23.1
+- curl_strnequal@CURL_NSS_3 7.23.1
+- curl_unescape@CURL_NSS_3 7.23.1
+- curl_url@CURL_NSS_3 7.63.0
+- curl_url_cleanup@CURL_NSS_3 7.63.0
+- curl_url_dup@CURL_NSS_3 7.63.0
+- curl_url_get@CURL_NSS_3 7.63.0
+- curl_url_set@CURL_NSS_3 7.63.0
+- curl_version@CURL_NSS_3 7.23.1
+- curl_version_info@CURL_NSS_3 7.23.1
++libcurl.so.4 libcurl3-nss #MINVER#
++ CURL_NSS_3@CURL_NSS_3 7.64.0-4
++ CURL_NSS_4@CURL_NSS_4 7.64.0-4
++ HIDDEN@HIDDEN 7.64.0-4
++ curl_easy_cleanup@CURL_NSS_4 7.64.0-4
++ curl_easy_duphandle@CURL_NSS_4 7.64.0-4
++ curl_easy_escape@CURL_NSS_4 7.64.0-4
++ curl_easy_getinfo@CURL_NSS_4 7.64.0-4
++ curl_easy_init@CURL_NSS_4 7.64.0-4
++ curl_easy_pause@CURL_NSS_4 7.64.0-4
++ curl_easy_perform@CURL_NSS_4 7.64.0-4
++ curl_easy_recv@CURL_NSS_4 7.64.0-4
++ curl_easy_reset@CURL_NSS_4 7.64.0-4
++ curl_easy_send@CURL_NSS_4 7.64.0-4
++ curl_easy_setopt@CURL_NSS_4 7.64.0-4
++ curl_easy_strerror@CURL_NSS_4 7.64.0-4
++ curl_easy_unescape@CURL_NSS_4 7.64.0-4
++ curl_easy_upkeep@CURL_NSS_4 7.64.0-4
++ curl_escape@CURL_NSS_4 7.64.0-4
++ curl_formadd@CURL_NSS_4 7.64.0-4
++ curl_formfree@CURL_NSS_4 7.64.0-4
++ curl_formget@CURL_NSS_4 7.64.0-4
++ curl_free@CURL_NSS_4 7.64.0-4
++ curl_getdate@CURL_NSS_4 7.64.0-4
++ curl_getenv@CURL_NSS_4 7.64.0-4
++ curl_global_cleanup@CURL_NSS_4 7.64.0-4
++ curl_global_init@CURL_NSS_4 7.64.0-4
++ curl_global_init_mem@CURL_NSS_4 7.64.0-4
++ curl_global_sslset@CURL_NSS_4 7.64.0-4
++ curl_jmpenv@CURL_NSS_4 7.64.0-4
++ curl_maprintf@CURL_NSS_4 7.64.0-4
++ curl_mfprintf@CURL_NSS_4 7.64.0-4
++ curl_mime_addpart@CURL_NSS_4 7.64.0-4
++ curl_mime_data@CURL_NSS_4 7.64.0-4
++ curl_mime_data_cb@CURL_NSS_4 7.64.0-4
++ curl_mime_encoder@CURL_NSS_4 7.64.0-4
++ curl_mime_filedata@CURL_NSS_4 7.64.0-4
++ curl_mime_filename@CURL_NSS_4 7.64.0-4
++ curl_mime_free@CURL_NSS_4 7.64.0-4
++ curl_mime_headers@CURL_NSS_4 7.64.0-4
++ curl_mime_init@CURL_NSS_4 7.64.0-4
++ curl_mime_name@CURL_NSS_4 7.64.0-4
++ curl_mime_subparts@CURL_NSS_4 7.64.0-4
++ curl_mime_type@CURL_NSS_4 7.64.0-4
++ curl_mprintf@CURL_NSS_4 7.64.0-4
++ curl_msnprintf@CURL_NSS_4 7.64.0-4
++ curl_msprintf@CURL_NSS_4 7.64.0-4
++ curl_multi_add_handle@CURL_NSS_4 7.64.0-4
++ curl_multi_assign@CURL_NSS_4 7.64.0-4
++ curl_multi_cleanup@CURL_NSS_4 7.64.0-4
++ curl_multi_fdset@CURL_NSS_4 7.64.0-4
++ curl_multi_info_read@CURL_NSS_4 7.64.0-4
++ curl_multi_init@CURL_NSS_4 7.64.0-4
++ curl_multi_perform@CURL_NSS_4 7.64.0-4
++ curl_multi_remove_handle@CURL_NSS_4 7.64.0-4
++ curl_multi_setopt@CURL_NSS_4 7.64.0-4
++ curl_multi_socket@CURL_NSS_4 7.64.0-4
++ curl_multi_socket_action@CURL_NSS_4 7.64.0-4
++ curl_multi_socket_all@CURL_NSS_4 7.64.0-4
++ curl_multi_strerror@CURL_NSS_4 7.64.0-4
++ curl_multi_timeout@CURL_NSS_4 7.64.0-4
++ curl_multi_wait@CURL_NSS_4 7.64.0-4
++ curl_mvaprintf@CURL_NSS_4 7.64.0-4
++ curl_mvfprintf@CURL_NSS_4 7.64.0-4
++ curl_mvprintf@CURL_NSS_4 7.64.0-4
++ curl_mvsnprintf@CURL_NSS_4 7.64.0-4
++ curl_mvsprintf@CURL_NSS_4 7.64.0-4
++ curl_pushheader_byname@CURL_NSS_4 7.64.0-4
++ curl_pushheader_bynum@CURL_NSS_4 7.64.0-4
++ curl_share_cleanup@CURL_NSS_4 7.64.0-4
++ curl_share_init@CURL_NSS_4 7.64.0-4
++ curl_share_setopt@CURL_NSS_4 7.64.0-4
++ curl_share_strerror@CURL_NSS_4 7.64.0-4
++ curl_slist_append@CURL_NSS_4 7.64.0-4
++ curl_slist_free_all@CURL_NSS_4 7.64.0-4
++ curl_strequal@CURL_NSS_4 7.64.0-4
++ curl_strnequal@CURL_NSS_4 7.64.0-4
++ curl_unescape@CURL_NSS_4 7.64.0-4
++ curl_url@CURL_NSS_4 7.64.0-4
++ curl_url_cleanup@CURL_NSS_4 7.64.0-4
++ curl_url_dup@CURL_NSS_4 7.64.0-4
++ curl_url_get@CURL_NSS_4 7.64.0-4
++ curl_url_set@CURL_NSS_4 7.64.0-4
++ curl_version@CURL_NSS_4 7.64.0-4
++ curl_version_info@CURL_NSS_4 7.64.0-4
+   dh_shlibdeps
+dpkg-shlibdeps: warning: debian/curl/usr/bin/curl contains an unresolvable reference to symbol curl_getenv@CURL_OPENSSL_4: it's probably a plugin
+dpkg-shlibdeps: warning: 41 other similar warnings have been skipped (use -v to see them all)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/curl/usr/bin/curl was not linked against libcurl.so.4 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl3-gnutls/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libk5crypto.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl3-gnutls/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libkrb5.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl3-gnutls/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libcom_err.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-nss-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libnssutil3.so (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-nss-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libplds4.so (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-nss-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libkrb5.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-nss-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libk5crypto.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-nss-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libcom_err.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-nss-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libsmime3.so (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-nss-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libplc4.so (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-openssl-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libk5crypto.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-openssl-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libcom_err.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-openssl-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libkrb5.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libkrb5.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libk5crypto.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libcom_err.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl3-nss/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libsmime3.so (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl3-nss/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libplc4.so (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl3-nss/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libplds4.so (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl3-nss/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libcom_err.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl3-nss/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libk5crypto.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl3-nss/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libkrb5.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl3-nss/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libnssutil3.so (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-gnutls-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libkrb5.so.3 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-gnutls-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libcom_err.so.2 (it uses none of the library's symbols)
+dpkg-shlibdeps: warning: package could avoid a useless dependency if debian/libcurl4-gnutls-dev/usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 was not linked against libk5crypto.so.3 (it uses none of the library's symbols)
+   dh_installdeb
+   dh_gencontrol
+dpkg-gencontrol: warning: package libcurl4-openssl-dev: substitution variable ${shlibs:Depends} unused, but is defined
+dpkg-gencontrol: warning: package libcurl4-nss-dev: substitution variable ${shlibs:Depends} unused, but is defined
+dpkg-gencontrol: warning: package libcurl4-openssl-dev: substitution variable ${shlibs:Depends} unused, but is defined
+dpkg-gencontrol: warning: package libcurl4-nss-dev: substitution variable ${shlibs:Depends} unused, but is defined
+dpkg-gencontrol: warning: package libcurl4-gnutls-dev: substitution variable ${shlibs:Depends} unused, but is defined
+dpkg-gencontrol: warning: package libcurl4-gnutls-dev: substitution variable ${shlibs:Depends} unused, but is defined
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'libcurl4-openssl-dev' in '../libcurl4-openssl-dev_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl3-gnutls' in '../libcurl3-gnutls_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl4-nss-dev' in '../libcurl4-nss-dev_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'curl' in '../curl_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'curl-dbgsym' in '../curl-dbgsym_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl4' in '../libcurl4_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl4-nss-dev-dbgsym' in '../libcurl4-nss-dev-dbgsym_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl4-doc' in '../libcurl4-doc_7.64.0-4_all.deb'.
+dpkg-deb: building package 'libcurl3-gnutls-dbgsym' in '../libcurl3-gnutls-dbgsym_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl4-openssl-dev-dbgsym' in '../libcurl4-openssl-dev-dbgsym_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl4-dbgsym' in '../libcurl4-dbgsym_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl3-nss' in '../libcurl3-nss_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl4-gnutls-dev' in '../libcurl4-gnutls-dev_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl4-gnutls-dev-dbgsym' in '../libcurl4-gnutls-dev-dbgsym_7.64.0-4_amd64.deb'.
+dpkg-deb: building package 'libcurl3-nss-dbgsym' in '../libcurl3-nss-dbgsym_7.64.0-4_amd64.deb'.
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../curl_7.64.0-4_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-source: info: unapplying 17_CURL_MAX_INPUT_LENGTH-largest-acceptable-string-inpu.patch
+dpkg-source: info: unapplying 16_tftp-use-the-current-blksize-for-recvfrom.patch
+dpkg-source: info: unapplying 15_connection_check-restore-original-conn-data-after-th.patch
+dpkg-source: info: unapplying 14_connection_check-set-data-to-the-transfer-doing-the-.patch
+dpkg-source: info: unapplying 13_singlesocket-fix-the-sincebefore-placement.patch
+dpkg-source: info: unapplying 12_zsh.patch
+dpkg-source: info: unapplying 11_omit-directories-from-config.patch
+dpkg-source: info: unapplying 08_enable-zsh.patch
+dpkg-source: info: unapplying 07_do-not-disable-debug-symbols.patch
+dpkg-source: info: unapplying 06_always-disable-valgrind.patch
+dpkg-source: info: unapplying 04_workaround_as_needed_bug.patch
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now running lintian curl_7.64.0-4_amd64.changes ...
+warning: the authors of lintian do not recommend running it with root privileges!
+W: libcurl3-gnutls: package-name-doesnt-match-sonames libcurl4
+W: libcurl3-gnutls: debian-changelog-line-too-long line 5
+W: libcurl3-gnutls: non-dev-pkg-with-shlib-symlink usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 usr/lib/x86_64-linux-gnu/libcurl.so
+E: libcurl3-gnutls: symbols-file-contains-current-version-with-debian-revision on symbol CURL_GNUTLS_3@CURL_GNUTLS_3 and 83 others
+W: libcurl4-gnutls-dev: package-name-doesnt-match-sonames libcurl4
+E: libcurl4-gnutls-dev: missing-dependency-on-libc needed by usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0
+W: libcurl4-gnutls-dev: debian-changelog-line-too-long line 5
+W: libcurl4-gnutls-dev: non-dev-pkg-with-shlib-symlink usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 usr/lib/x86_64-linux-gnu/libcurl.so
+W: libcurl4-doc: debian-changelog-line-too-long line 5
+W: libcurl4-doc: manpage-has-errors-from-man usr/share/man/man3/CURLMOPT_PIPELINING.3.gz 67: normal or special character expected (got a space)
+W: libcurl4-doc: manpage-has-errors-from-man usr/share/man/man3/CURLOPT_PROXY_CAPATH.3.gz 72: warning: macro 'Br' not defined
+W: libcurl4-doc: manpage-has-errors-from-man usr/share/man/man3/CURLOPT_RTSP_STREAM_URI.3.gz 46: warning: macro '*'' not defined
+W: libcurl4-doc: manpage-has-bad-whatis-entry usr/share/man/man3/CURLOPT_TRAILERDATA.3.gz
+W: libcurl4-doc: manpage-has-bad-whatis-entry usr/share/man/man3/CURLOPT_TRAILERFUNCTION.3.gz
+W: libcurl4-doc: manpage-has-errors-from-man usr/share/man/man3/CURLOPT_URL.3.gz 199: warning [p 3, 10.7i]: cannot adjust line
+W: libcurl4-doc: manpage-has-errors-from-man usr/share/man/man3/curl_easy_duphandle.3.gz 52: warning [p 1, 6.0i]: cannot adjust line
+W: libcurl4-doc: manpage-has-errors-from-man usr/share/man/man3/curl_easy_reset.3.gz 44: warning [p 1, 4.8i]: cannot adjust line
+W: libcurl4-openssl-dev: package-name-doesnt-match-sonames libcurl4
+E: libcurl4-openssl-dev: missing-dependency-on-libc needed by usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0
+W: libcurl4-openssl-dev: debian-changelog-line-too-long line 5
+W: libcurl4-openssl-dev: non-dev-pkg-with-shlib-symlink usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 usr/lib/x86_64-linux-gnu/libcurl.so
+W: curl: debian-changelog-line-too-long line 5
+W: curl: manpage-has-errors-from-man usr/share/man/man1/curl.1.gz 531: warning: macro 'foobar'' not defined
+W: libcurl3-nss: package-name-doesnt-match-sonames libcurl4
+W: libcurl3-nss: debian-changelog-line-too-long line 5
+W: libcurl3-nss: non-dev-pkg-with-shlib-symlink usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 usr/lib/x86_64-linux-gnu/libcurl.so
+E: libcurl3-nss: symbols-file-contains-current-version-with-debian-revision on symbol CURL_NSS_3@CURL_NSS_3 and 83 others
+W: libcurl4-nss-dev: package-name-doesnt-match-sonames libcurl4
+E: libcurl4-nss-dev: missing-dependency-on-libc needed by usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0
+W: libcurl4-nss-dev: debian-changelog-line-too-long line 5
+W: libcurl4-nss-dev: non-dev-pkg-with-shlib-symlink usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 usr/lib/x86_64-linux-gnu/libcurl.so
+W: libcurl4: debian-changelog-line-too-long line 5
+W: libcurl4: non-dev-pkg-with-shlib-symlink usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0 usr/lib/x86_64-linux-gnu/libcurl.so
+E: libcurl4: symbols-file-contains-current-version-with-debian-revision on symbol CURL_OPENSSL_3@CURL_OPENSSL_3 and 68 others
+N: 0 tags overridden; 2 unused overrides
+Finished running lintian.

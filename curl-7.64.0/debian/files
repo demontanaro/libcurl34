@@ -1,0 +1,16 @@
+curl-dbgsym_7.64.0-4_amd64.deb debug optional automatic=yes
+curl_7.64.0-4_amd64.buildinfo web optional
+curl_7.64.0-4_amd64.deb web optional
+libcurl3-gnutls-dbgsym_7.64.0-4_amd64.deb debug optional automatic=yes
+libcurl3-gnutls_7.64.0-4_amd64.deb libs optional
+libcurl3-nss-dbgsym_7.64.0-4_amd64.deb debug optional automatic=yes
+libcurl3-nss_7.64.0-4_amd64.deb libs optional
+libcurl4-dbgsym_7.64.0-4_amd64.deb debug optional automatic=yes
+libcurl4-doc_7.64.0-4_all.deb doc optional
+libcurl4-gnutls-dev-dbgsym_7.64.0-4_amd64.deb debug optional automatic=yes
+libcurl4-gnutls-dev_7.64.0-4_amd64.deb libdevel optional
+libcurl4-nss-dev-dbgsym_7.64.0-4_amd64.deb debug optional automatic=yes
+libcurl4-nss-dev_7.64.0-4_amd64.deb libdevel optional
+libcurl4-openssl-dev-dbgsym_7.64.0-4_amd64.deb debug optional automatic=yes
+libcurl4-openssl-dev_7.64.0-4_amd64.deb libdevel optional
+libcurl4_7.64.0-4_amd64.deb libs optional

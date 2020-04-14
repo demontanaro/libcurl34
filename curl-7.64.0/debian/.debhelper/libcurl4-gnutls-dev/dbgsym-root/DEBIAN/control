@@ -1,0 +1,13 @@
+Package: libcurl4-gnutls-dev-dbgsym
+Source: curl
+Version: 7.64.0-4
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Installed-Size: 783
+Depends: libcurl4-gnutls-dev (= 7.64.0-4)
+Section: debug
+Priority: optional
+Multi-Arch: same
+Description: debug symbols for libcurl4-gnutls-dev
+Build-Ids: b031df7df1b436c86b3f7925f2c4e81bbff35668

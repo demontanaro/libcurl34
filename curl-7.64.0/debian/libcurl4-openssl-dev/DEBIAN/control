@@ -1,0 +1,32 @@
+Package: libcurl4-openssl-dev
+Source: curl
+Version: 7.64.0-4
+Architecture: amd64
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Installed-Size: 2077
+Depends: libcurl4 (= 7.64.0-4)
+Suggests: libcurl4-doc, libidn11-dev, libkrb5-dev, libldap2-dev, librtmp-dev, libssh2-1-dev, libssl-dev (>= 1.1), pkg-config, zlib1g-dev
+Conflicts: libcurl4-gnutls-dev, libcurl4-nss-dev, libssl-dev (<< 1.1), libssl1.0-dev
+Provides: libcurl-dev, libcurl-ssl-dev, libcurl3-dev, libcurl3-openssl-dev, libcurl4-dev
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: http://curl.haxx.se
+Description: development files and documentation for libcurl (OpenSSL flavour)
+ libcurl is an easy-to-use client-side URL transfer library, supporting DICT,
+ FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, POP3, POP3S,
+ RTMP, RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP
+ form based upload, proxies, cookies, user+password authentication (Basic,
+ Digest, NTLM, Negotiate, Kerberos), file transfer resume, http proxy tunneling
+ and more!
+ .
+ libcurl is free, thread-safe, IPv6 compatible, feature rich, well supported,
+ fast, thoroughly documented and is already used by many known, big and
+ successful companies and numerous applications.
+ .
+ This package provides the development files (ie. includes, static library,
+ manual pages) that allow one to build software which uses libcurl.
+ .
+ SSL support is provided by OpenSSL.

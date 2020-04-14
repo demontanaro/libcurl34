@@ -1,0 +1,30 @@
+* Expire in 0 ms for 6 (transfer 0x561a0032e7c0)
+* Expire in 13000 ms for 8 (transfer 0x561a0032e7c0)
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Expire in 200 ms for 4 (transfer 0x561a0032e7c0)
+* Connected to 127.0.0.1 (127.0.0.1) port 8991 (#0)
+* Initializing NSS with certpath: none
+* WARNING: failed to load NSS PEM library libnsspem.so. Using OpenSSL PEM certificates will not work.
+*   CAfile: none
+  CApath: none
+* loaded libnssckbi.so
+* skipping SSL peer certificate verification
+* ALPN/NPN, server did not agree to a protocol
+* SSL connection using TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+* Server certificate:
+* 	subject: CN=localhost.nn,O=Edel Curl Arctic Illudium Research Cloud,C=NN
+* 	start date: Sep 05 23:29:01 2018 GMT
+* 	expire date: Nov 22 23:29:01 2026 GMT
+* 	common name: localhost.nn
+* 	issuer: CN=Northern Nowhere Trust Anchor,O=Edel Curl Arctic Illudium Research Cloud,C=NN
+> GET /verifiedserver HTTP/1.1
+> Host: 127.0.0.1:8991
+> User-Agent: curl/7.64.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Length: 17
+< 
+{ [17 bytes data]
+* Connection #0 to host 127.0.0.1 left intact

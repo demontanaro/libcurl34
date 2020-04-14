@@ -1,0 +1,8 @@
+curl
+libcurl4
+libcurl3-gnutls
+libcurl3-nss
+libcurl4-openssl-dev
+libcurl4-gnutls-dev
+libcurl4-nss-dev
+libcurl4-doc

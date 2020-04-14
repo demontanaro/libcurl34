@@ -1,0 +1,20 @@
+16:59:19.695473 == Info: Expire in 0 ms for 6 (transfer 0x55f5f894e9c0)
+16:59:19.695956 == Info: Expire in 1 ms for 1 (transfer 0x55f5f894e9c0)
+16:59:19.697346 == Info: Expire in 0 ms for 1 (transfer 0x55f5f894e9c0)
+16:59:19.697376 == Info: Expire in 0 ms for 1 (transfer 0x55f5f894e9c0)
+16:59:19.697422 == Info:   Trying ::1...
+16:59:19.697441 == Info: TCP_NODELAY set
+16:59:19.697466 == Info: Expire in 149999 ms for 3 (transfer 0x55f5f894e9c0)
+16:59:19.697564 == Info: Expire in 200 ms for 4 (transfer 0x55f5f894e9c0)
+16:59:19.697742 == Info: connect to ::1 port 8991 failed: Connection refused
+16:59:19.697772 == Info:   Trying 127.0.0.1...
+16:59:19.697788 == Info: TCP_NODELAY set
+16:59:19.697805 == Info: Expire in 149999 ms for 3 (transfer 0x55f5f894e9c0)
+16:59:19.698000 == Info: Connected to localhost (127.0.0.1) port 8991 (#0)
+16:59:19.698419 == Info: found 1 certificates in ./certs/EdelCurlRoot-ca.crt
+16:59:19.789274 == Info: found 387 certificates in /etc/ssl/certs
+16:59:19.789471 == Info: ALPN, offering h2
+16:59:19.789488 == Info: ALPN, offering http/1.1
+16:59:19.799217 == Info: SSL connection using TLS1.2 / ECDHE_RSA_AES_256_GCM_SHA384
+16:59:19.800061 == Info: server certificate verification failed. CAfile: ./certs/EdelCurlRoot-ca.crt CRLfile: none
+16:59:19.800582 == Info: Closing connection 0

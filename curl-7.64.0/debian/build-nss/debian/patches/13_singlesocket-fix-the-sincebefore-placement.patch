@@ -1,0 +1,38 @@
+From afc00e047c773faeaa60a5f86a246cbbeeba5819 Mon Sep 17 00:00:00 2001
+From: Daniel Stenberg <daniel@haxx.se>
+Date: Tue, 19 Feb 2019 15:56:54 +0100
+Subject: [PATCH] singlesocket: fix the 'sincebefore' placement
+
+The variable wasn't properly reset within the loop and thus could remain
+set for sockets that hadn't been set before and miss notifying the app.
+
+This is a follow-up to 4c35574 (shipped in curl 7.64.0)
+
+Reported-by: buzo-ffm on github
+Detected-by: Jan Alexander Steffens
+Fixes #3585
+Closes #3589
+---
+ lib/multi.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+--- a/lib/multi.c
++++ b/lib/multi.c
+@@ -2360,8 +2360,6 @@
+   int num;
+   unsigned int curraction;
+   int actions[MAX_SOCKSPEREASYHANDLE];
+-  unsigned int comboaction;
+-  bool sincebefore = FALSE;
+ 
+   for(i = 0; i< MAX_SOCKSPEREASYHANDLE; i++)
+     socks[i] = CURL_SOCKET_BAD;
+@@ -2380,6 +2378,8 @@
+       i++) {
+     unsigned int action = CURL_POLL_NONE;
+     unsigned int prevaction = 0;
++    unsigned int comboaction;
++    bool sincebefore = FALSE;
+ 
+     s = socks[i];
+ 

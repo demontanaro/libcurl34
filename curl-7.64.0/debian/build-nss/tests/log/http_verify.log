@@ -1,0 +1,16 @@
+* Expire in 0 ms for 6 (transfer 0x55f0c982e7c0)
+* Expire in 13000 ms for 8 (transfer 0x55f0c982e7c0)
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Expire in 200 ms for 4 (transfer 0x55f0c982e7c0)
+* Connected to 127.0.0.1 (127.0.0.1) port 8990 (#0)
+> GET /verifiedserver HTTP/1.1
+> Host: 127.0.0.1:8990
+> User-Agent: curl/7.64.0
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Content-Length: 17
+< 
+{ [1 bytes data]
+* Connection #0 to host 127.0.0.1 left intact

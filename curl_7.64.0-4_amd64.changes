@@ -1,0 +1,78 @@
+Format: 1.8
+Date: Fri, 14 Jun 2019 19:23:32 +0100
+Source: curl
+Binary: curl curl-dbgsym libcurl3-gnutls libcurl3-gnutls-dbgsym libcurl3-nss libcurl3-nss-dbgsym libcurl4 libcurl4-dbgsym libcurl4-doc libcurl4-gnutls-dev libcurl4-gnutls-dev-dbgsym libcurl4-nss-dev libcurl4-nss-dev-dbgsym libcurl4-openssl-dev libcurl4-openssl-dev-dbgsym
+Architecture: amd64 all
+Version: 7.64.0-4
+Distribution: unstable
+Urgency: medium
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Changed-By: Alessandro Ghedini <ghedo@debian.org>
+Description:
+ curl       - command line tool for transferring data with URL syntax
+ libcurl3-gnutls - easy-to-use client-side URL transfer library (GnuTLS flavour)
+ libcurl3-nss - easy-to-use client-side URL transfer library (NSS flavour)
+ libcurl4   - easy-to-use client-side URL transfer library (OpenSSL flavour)
+ libcurl4-doc - documentation for libcurl
+ libcurl4-gnutls-dev - development files and documentation for libcurl (GnuTLS flavour)
+ libcurl4-nss-dev - development files and documentation for libcurl (NSS flavour)
+ libcurl4-openssl-dev - development files and documentation for libcurl (OpenSSL flavour)
+Closes: 929351 929352
+Changes:
+ curl (7.64.0-4) unstable; urgency=medium
+ .
+   * Fix TFTP receive buffer overflow as per CVE-2019-5436 (Closes: #929351)
+     https://curl.haxx.se/docs/CVE-2019-5436.html
+   * Fix integer overflow in curl_url_set() as per CVE-2019-5435 (Closes: #929352)
+     https://curl.haxx.se/docs/CVE-2019-5435.html
+Checksums-Sha1:
+ 74343006849fad30966da9b62362a57b344d3ccd 118632 curl-dbgsym_7.64.0-4_amd64.deb
+ 3435307de47320ea552b4269592dfc2e47258bda 11528 curl_7.64.0-4_amd64.buildinfo
+ 08c27a8fab895dd21efab457f3fe71a195ca3c2c 264620 curl_7.64.0-4_amd64.deb
+ d0265bcd8a5ab73db938bff1300888cd66af7a62 728840 libcurl3-gnutls-dbgsym_7.64.0-4_amd64.deb
+ 8abec4ff8bdaab959f52d1236c12a322f329c492 429276 libcurl3-gnutls_7.64.0-4_amd64.deb
+ 9fddabed90d7961f596fd477d25d0e335a9224ad 767648 libcurl3-nss-dbgsym_7.64.0-4_amd64.deb
+ 23bba2b247940fd84f1d724da851f96c0d1cb903 436856 libcurl3-nss_7.64.0-4_amd64.deb
+ 1d909da64496b12cf2541bbb025246f072620940 747868 libcurl4-dbgsym_7.64.0-4_amd64.deb
+ 8f4681915c321bb2ab36a51f081e5b77f53227a2 911316 libcurl4-doc_7.64.0-4_all.deb
+ 9d2e9b06cdbd3b91252182009d10812a00f6be30 728844 libcurl4-gnutls-dev-dbgsym_7.64.0-4_amd64.deb
+ 6b2edab677ab1db60d3a42f2212db66a0a158527 373048 libcurl4-gnutls-dev_7.64.0-4_amd64.deb
+ 8f23362f67d90a7ac0e2ba0c2d49d48388cfd3cd 767656 libcurl4-nss-dev-dbgsym_7.64.0-4_amd64.deb
+ 048b3e9a11d7ba6d4e0e121350bc82108a243c78 378532 libcurl4-nss-dev_7.64.0-4_amd64.deb
+ 223a072a584d884706aa32005961140732f91367 747884 libcurl4-openssl-dev-dbgsym_7.64.0-4_amd64.deb
+ 6fa06747c8747c94f560f7cb05e5d14c0059fd87 476104 libcurl4-openssl-dev_7.64.0-4_amd64.deb
+ 80872d6f59b2735a74c1a10ea8d959843421eecf 434168 libcurl4_7.64.0-4_amd64.deb
+Checksums-Sha256:
+ 6f18beff7ff2dd841d4e2dfea05d8a91421d9c243b1dd0327358d3fd97b84a72 118632 curl-dbgsym_7.64.0-4_amd64.deb
+ bdf681b579db8e649853357f7b5dbb8dc24c0320464c39e11c012e35cc499623 11528 curl_7.64.0-4_amd64.buildinfo
+ f0fabe952cab3b3984b53e6c61d2db6dcfab30f7c58395910d005326bbc78394 264620 curl_7.64.0-4_amd64.deb
+ eaeeda42c7a970aa5c350f4e6f4ae13620c7f42c3099ae3c2541131b0c5954ea 728840 libcurl3-gnutls-dbgsym_7.64.0-4_amd64.deb
+ b588d05d98b0793f3a62c9567bc461756562a141e961875ac846e6aa9d8fe922 429276 libcurl3-gnutls_7.64.0-4_amd64.deb
+ 8ba987d71dae6f7eb6e06df4c58e98a6dfce2c1af768544c585725b1bfb0c3d5 767648 libcurl3-nss-dbgsym_7.64.0-4_amd64.deb
+ 5a5d5c8270702e6ff1e3b4e564ae8a635bd5b91c6e63170cf09dc8e5f31128cf 436856 libcurl3-nss_7.64.0-4_amd64.deb
+ a0f5c2bbfda04d0bb2e2846141e48b074d46014396f802eb5089e019f30b172f 747868 libcurl4-dbgsym_7.64.0-4_amd64.deb
+ 459f6450dd217d9c107642cf29d465cdfa2cbb5c68576befc3be325210b4ea5e 911316 libcurl4-doc_7.64.0-4_all.deb
+ f4c58ad69155c45ed33c670e1d2ec1444a2bb2dea3af5569bc684931fec9e923 728844 libcurl4-gnutls-dev-dbgsym_7.64.0-4_amd64.deb
+ def76c9f46fcbbcf9ee685f716ec1184cfbd154580b136385543f7170fddd4c1 373048 libcurl4-gnutls-dev_7.64.0-4_amd64.deb
+ 8f0c1ab822222ac874981803fb3631408d63be0654f3c92cab64469240af4367 767656 libcurl4-nss-dev-dbgsym_7.64.0-4_amd64.deb
+ 40af465bf64f2fff86009ab2656958427b51cc8c66c1bd4d0e1a5de3bbf785ad 378532 libcurl4-nss-dev_7.64.0-4_amd64.deb
+ 874ea2ef57764f2ec5461ff43b0eda3faa91a56635e240d2456d44cde10c72b2 747884 libcurl4-openssl-dev-dbgsym_7.64.0-4_amd64.deb
+ f7ab31ae93ecfb7d2abc63542fba8d373ada274d7871b1446549ca0076c3fd2d 476104 libcurl4-openssl-dev_7.64.0-4_amd64.deb
+ ef007de1c177cfccc69944ae8eff9555504c349ea9f476a27c0d34d45eb73bc6 434168 libcurl4_7.64.0-4_amd64.deb
+Files:
+ 05190f5467d90062b0d04062278a473e 118632 debug optional curl-dbgsym_7.64.0-4_amd64.deb
+ aacebac49282bac0f0d40849220ad1c3 11528 web optional curl_7.64.0-4_amd64.buildinfo
+ 69b2978f1b2bb96998efbad3a8feb8c1 264620 web optional curl_7.64.0-4_amd64.deb
+ 415be961ac1ec1cab22d5e8b1f35c2ca 728840 debug optional libcurl3-gnutls-dbgsym_7.64.0-4_amd64.deb
+ 3bacdb6e07e7af869b1afa639eb1101f 429276 libs optional libcurl3-gnutls_7.64.0-4_amd64.deb
+ 71979b3a8506441028137fe8fbb919d9 767648 debug optional libcurl3-nss-dbgsym_7.64.0-4_amd64.deb
+ 64f0ff812d5bf40e393c9807d9a420e1 436856 libs optional libcurl3-nss_7.64.0-4_amd64.deb
+ 73ca3931e098ac0718a14c4058b77d84 747868 debug optional libcurl4-dbgsym_7.64.0-4_amd64.deb
+ ef635b0cad828a165169f17baf6d412d 911316 doc optional libcurl4-doc_7.64.0-4_all.deb
+ c59f6bf6d64b8059aec1d525b1437e6d 728844 debug optional libcurl4-gnutls-dev-dbgsym_7.64.0-4_amd64.deb
+ a2a433c16aeb2490ee6910c2985f4843 373048 libdevel optional libcurl4-gnutls-dev_7.64.0-4_amd64.deb
+ 07f723cce0c8768c8eb50fe2cf95c672 767656 debug optional libcurl4-nss-dev-dbgsym_7.64.0-4_amd64.deb
+ f19985d45b884987efa73c945aac2157 378532 libdevel optional libcurl4-nss-dev_7.64.0-4_amd64.deb
+ b84b088f5971f87039e9591a5fa08df1 747884 debug optional libcurl4-openssl-dev-dbgsym_7.64.0-4_amd64.deb
+ e64ce7600f74337089a53f9e8bfe818d 476104 libdevel optional libcurl4-openssl-dev_7.64.0-4_amd64.deb
+ bbc0e0bce98fe482910bc61b91b2395c 434168 libs optional libcurl4_7.64.0-4_amd64.deb

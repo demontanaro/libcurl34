@@ -1,0 +1,6 @@
+debian/tmp-gnutls/usr/bin/curl
+debian/tmp-gnutls/usr/share/zsh/vendor-completions
+debian/tmp-nss/usr/bin/curl
+debian/tmp-nss/usr/share/zsh/vendor-completions
+debian/tmp/usr/bin/curl
+debian/tmp/usr/share/zsh/vendor-completions

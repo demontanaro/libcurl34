@@ -1,0 +1,20 @@
+2020.04.14 16:59:17 LOG5[ui]: stunnel 5.50 on x86_64-pc-linux-gnu platform
+2020.04.14 16:59:17 LOG5[ui]: Compiled with OpenSSL 1.1.1b  26 Feb 2019
+2020.04.14 16:59:17 LOG5[ui]: Running  with OpenSSL 1.1.1d  10 Sep 2019
+2020.04.14 16:59:17 LOG5[ui]: Threading:PTHREAD Sockets:POLL,IPv6,SYSTEMD TLS:ENGINE,FIPS,OCSP,PSK,SNI Auth:LIBWRAP
+2020.04.14 16:59:17 LOG5[ui]: Reading configuration from file /root/instalables/libcurl34/curl-7.64.0/debian/build-gnutls/tests/https_stunnel.conf
+2020.04.14 16:59:17 LOG5[ui]: UTF-8 byte order mark not detected
+2020.04.14 16:59:17 LOG5[ui]: FIPS mode disabled
+2020.04.14 16:59:17 LOG5[ui]: Configuration successful
+2020.04.14 16:59:17 LOG5[ui]: Binding service [curltest] to :::8991: Address already in use (98)
+2020.04.14 16:59:18 LOG5[0]: Service [curltest] accepted connection from 127.0.0.1:31458
+2020.04.14 16:59:18 LOG3[0]: s_connect: connect ::1:8990: Connection refused (111)
+2020.04.14 16:59:18 LOG5[0]: s_connect: connected 127.0.0.1:8990
+2020.04.14 16:59:18 LOG5[0]: Service [curltest] connected remote server from 127.0.0.1:10956
+2020.04.14 16:59:18 LOG5[0]: Connection closed: 55 byte(s) sent to TLS, 92 byte(s) sent to socket
+2020.04.14 16:59:19 LOG5[1]: Service [curltest] accepted connection from 127.0.0.1:31466
+2020.04.14 16:59:19 LOG3[1]: s_connect: connect ::1:8990: Connection refused (111)
+2020.04.14 16:59:19 LOG5[1]: s_connect: connected 127.0.0.1:8990
+2020.04.14 16:59:19 LOG5[1]: Service [curltest] connected remote server from 127.0.0.1:10964
+2020.04.14 16:59:19 LOG5[1]: Connection closed: 0 byte(s) sent to TLS, 0 byte(s) sent to socket
+2020.04.14 16:59:19 LOG5[ui]: Terminated

@@ -1,0 +1,9 @@
+3f0a65e8a61b8bd20629d9b0811f4520  usr/lib/x86_64-linux-gnu/libcurl.a
+a06d54cfe0c93adba7370b434785eb0d  usr/lib/x86_64-linux-gnu/libcurl.la
+45bc9042d7b908c2c07170a115737825  usr/lib/x86_64-linux-gnu/libcurl.so.4.5.0
+f0a1358610b4480ebb532b679a516501  usr/lib/x86_64-linux-gnu/pkgconfig/libcurl.pc
+5f67ab850d7e46a9e730e66884b300c7  usr/share/doc/libcurl3-nss/NEWS.Debian.gz
+f5131e1343d4547e6140dc95d97a61bc  usr/share/doc/libcurl3-nss/changelog.Debian.gz
+39da2434c839b9c94179bca61738d18b  usr/share/doc/libcurl3-nss/changelog.gz
+5a2a3376ed6fd7f4b8f84b6c1ec33dbf  usr/share/doc/libcurl3-nss/copyright
+cbcb596e14ac8bd777a0bb0b71104f37  usr/share/lintian/overrides/libcurl3-nss
