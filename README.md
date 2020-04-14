@@ -2,7 +2,7 @@
 
 I need to use some programs that require old dependencies, in this case: libcurl3
 
-But in recent distros the libcurl3 is removed in favor of libcur4.
+But in recent distros the libcurl3 is removed in favor of libcurl4.
 
 This version of libcurl4 have the oportunity of run these programs because include the API routines of libcurl3 compiled 
 with a recent version of all included libraries.
