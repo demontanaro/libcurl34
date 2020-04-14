@@ -58,6 +58,6 @@ If you need more libraries for dev or other packages, can you download form here
   
   ## Thanks a Evgeny Brazgin for your contribution
   
-  https://launchpad.net/~xapienz
+  https://launchpad.net/~xapienz/+archive/ubuntu/curl34
   
   Ubuntu 18 version
