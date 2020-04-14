@@ -1,4 +1,4 @@
-I have a need to use some programs that require old dependencies, in this case: libcurl3
+I need to use some programs that require old dependencies, in this case: libcurl3
 
 But in recent distros the libcurl3 is removed in favor of libcur4.
 
