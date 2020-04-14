@@ -56,7 +56,6 @@ If you need more libraries for dev or other packages, can you download from here
   PSL support:      yes
   HTTP2 support:    enabled (nghttp2)
   Protocols:        DICT FILE FTP FTPS GOPHER HTTP HTTPS IMAP IMAPS LDAP LDAPS POP3 POP3S RTMP RTSP SCP SFTP SMB SMBS SMTP SMTPS TELNET TFTP
-  
   ```
   
   ## Thanks a Evgeny Brazgin for your contribution
