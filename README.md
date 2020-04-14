@@ -1,4 +1,4 @@
-# libcurl4 with libcurl3 compatibility
+# libcurl4 with libcurl3 compatibility for Debian 10. (at the end of readme the repo for Ubuntu 18)
 
 I need to use some programs that require old dependencies, in this case: libcurl3
 
