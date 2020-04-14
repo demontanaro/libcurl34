@@ -21,7 +21,9 @@ dpkg -i install libcurl4_7.64.0-4_amd64.deb
 
 That's it.
 
-If you need more libraries for dev or other packages, can you download form here and install in same way.
+(If you have a programs with the libcurl4 dependency, when you uninstall these all the programas that depends of it they will be uninstalled too. Reinstall them.)
+
+If you need more libraries for dev or other packages, can you download from here and install in same way.
 
 ## Build options in configure
 
